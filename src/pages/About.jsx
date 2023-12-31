@@ -1,13 +1,11 @@
+import {experiences, skills} from "../constants";
+import "react-vertical-timeline-component/style.min.css";
+import {CTA, Footer} from "../components/components.js";
+
 import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
-
-import { experiences, skills } from "../constants";
-
-import "react-vertical-timeline-component/style.min.css";
-import {CTA, Footer} from "../components/components.js";
 
 const About = () => {
     return (
@@ -34,7 +32,7 @@ const About = () => {
                 <div className='mt-16 flex flex-wrap gap-12'>
                     {skills.map((skill) => (
                         <div className='block-container w-20 h-20' key={skill.name}>
-                            <div className='btn-back rounded-xl' />
+                            <div className='btn-back rounded-xl'/>
                             <div className='btn-front rounded-xl flex justify-center items-center'>
                                 <img
                                     src={skill.imageUrl}
@@ -54,7 +52,7 @@ const About = () => {
                             <VerticalTimelineElement
                                 key={experience.company_name}
                                 date={experience.date}
-                                iconStyle={{ background: experience.iconBg }}
+                                iconStyle={{background: experience.iconBg}}
                                 icon={
                                     <div className='flex justify-center items-center w-full h-full'>
                                         <img
@@ -77,7 +75,7 @@ const About = () => {
                                     </h3>
                                     <p
                                         className='text-black-500 font-medium text-base'
-                                        style={{ margin: 0 }}
+                                        style={{margin: 0}}
                                     >
                                         {experience.company_name}
                                     </p>
@@ -99,10 +97,10 @@ const About = () => {
                 </div>
             </div>
 
-            <hr className='border-slate-200' />
+            <hr className='border-slate-200'/>
 
-            <CTA />
-            <Footer />
+            <CTA/>
+            <Footer/>
         </section>
     );
 };

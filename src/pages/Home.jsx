@@ -1,7 +1,7 @@
 import Loader from "../components/Loader.jsx";
 import React, {Suspense, useState, useEffect, useRef} from "react";
 import {Canvas} from "@react-three/fiber";
-import {Bird, Island, Plane, Sky} from "../models";
+import {Pheonix, Island, Plane, Sky, Bird, Dragon} from "../models";
 import HomeInfo from "../components/HomeInfo.jsx";
 
 import sakura from "../assets/sakura.mp3"
@@ -44,12 +44,12 @@ const Home = () => {
         let screenScale, screenPosition;
 
         if (window.innerWidth < 768) {
-            screenScale = [1.5, 1.5, 1.5]
-            screenPosition = [0, -1.5, 0]
+            screenScale = [110, 110, 110]
+            screenPosition = [0, -4.5, 0]
         }
         else {
-            screenScale = [3, 3, 3]
-            screenPosition = [0, -4, -4]
+            screenScale = [120, 120, 120]
+            screenPosition = [0, -7, -7]
         }
 
         return [screenScale, screenPosition]
@@ -81,8 +81,9 @@ const Home = () => {
                         intensity={1.5}
                     />
 
-                    <Bird
+                    <Pheonix
                     />
+                    <Bird />
                     <Sky
                         isRotating={isRotating}
                     />
@@ -94,11 +95,11 @@ const Home = () => {
                         setIsRotating={setIsRotating}
                         setCurrentStage={setCurrentStage}
                     />
-                    <Plane
+                    <Dragon
                         isRotating={isRotating}
                         scale={planeScale}
                         position={planePosition}
-                        rotation={[0, 20, 0]}
+                        rotation={[0, 1.5, 0]}
                     />
                 </Suspense>
             </Canvas>

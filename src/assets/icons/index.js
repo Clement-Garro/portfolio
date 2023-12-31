@@ -10,6 +10,17 @@ import linkedin from './linkedin.svg'
 import twitter from './twitter.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
+import bot from './bot.svg'
+import controverse from './controverse.svg'
+import escape_game from './escape_game.svg'
+import game from './game.svg'
+import moon from './moon.svg'
+import portfolio from './portfolio.svg'
+import train from './train.svg'
+import java from './java.svg'
+import vite from './vite.svg'
+import mySQL from './mySQL.svg'
+import postgreSQL from './postgreSQL.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
@@ -27,5 +38,16 @@ export {
     arrow,
     contact,
     soundon,
+    bot,
+    controverse,
+    escape_game,
+    game,
+    moon,
+    portfolio,
+    train,
+    java,
+    vite,
+    postgreSQL,
+    mySQL,
     soundoff
 }

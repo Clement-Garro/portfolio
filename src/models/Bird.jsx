@@ -4,7 +4,7 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 
 import birdScene from "../assets/3d/bird.glb";
 
-export function Bird() {
+const Bird = ({...props }) => {
     const birdRef = useRef();
 
     const { scene, animations } = useGLTF(birdScene);
@@ -16,14 +16,13 @@ export function Bird() {
 
     // Set the initial speed, distance to travel, and minimum distance
     const initialSpeed = 0.03;
-    const distanceToTravel = 25;
-    const minDistance = -25;
+    const distanceToTravel = 21;
+    const minDistance = -21;
 
     // State to keep track of the current speed
     const [speed, setSpeed] = useState(initialSpeed);
 
     useFrame(() => {
-        console.log(birdRef.current.position.x);
         // Increment the X position based on the current speed
         birdRef.current.position.x += speed;
 
@@ -43,8 +42,10 @@ export function Bird() {
     });
 
     return (
-        <mesh ref={birdRef} position={[20, 8, -10]} rotation={[0, 0, 0]}>
+        <mesh ref={birdRef} {...props}>
             <primitive object={scene} />
         </mesh>
     );
 }
+
+export default Bird;

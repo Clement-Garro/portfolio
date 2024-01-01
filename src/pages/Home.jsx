@@ -1,7 +1,7 @@
 import Loader from "../components/Loader.jsx";
 import React, {Suspense, useState, useEffect, useRef} from "react";
 import {Canvas} from "@react-three/fiber";
-import {Pheonix, Island, Plane, Sky, Bird, Dragon} from "../models";
+import { Island, Sky, Bird, Dragon} from "../models";
 import HomeInfo from "../components/HomeInfo.jsx";
 
 import sakura from "../assets/sakura.mp3"
@@ -40,23 +40,24 @@ const Home = () => {
 
         return [screenScale, screenPosition, rotation]
     }
-    const adjustPlaneForScreenSize = () => {
+    const adjustDragonForScreenSize = () => {
         let screenScale, screenPosition;
 
         if (window.innerWidth < 768) {
-            screenScale = [110, 110, 110]
-            screenPosition = [0, -4.5, 0]
+            screenScale = [60, 60, 60]
+            screenPosition = [0, -3.5, 0]
         }
         else {
-            screenScale = [120, 120, 120]
+            screenScale = [140, 140, 140]
             screenPosition = [0, -7, -7]
         }
 
         return [screenScale, screenPosition]
     }
 
+
     const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize()
-    const [planeScale, planePosition] = adjustPlaneForScreenSize()
+    const [dragonScale, dragonPosition] = adjustDragonForScreenSize()
 
     return (
         <section className="w-full h-screen relative">
@@ -81,9 +82,10 @@ const Home = () => {
                         intensity={1.5}
                     />
 
-                    <Pheonix
+                    <Bird
+                        position={[21, 8, -10]}
+                        rotation={[0, 0, 0]}
                     />
-                    <Bird />
                     <Sky
                         isRotating={isRotating}
                     />
@@ -97,8 +99,8 @@ const Home = () => {
                     />
                     <Dragon
                         isRotating={isRotating}
-                        scale={planeScale}
-                        position={planePosition}
+                        scale={dragonScale}
+                        position={dragonPosition}
                         rotation={[0, 1.5, 0]}
                     />
                 </Suspense>

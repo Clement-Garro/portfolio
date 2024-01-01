@@ -74,7 +74,6 @@ export const skills = [
 export const experiences = [
     {
         title: "Portolio",
-        company_name: "",
         icon: portfolio,
         iconBg: "#8e8e8e",
         date: "Decembre 2023 - Janvier 2024",
@@ -100,7 +99,6 @@ export const experiences = [
     },
     {
         title: "Aventurier du rail",
-        company_name: "",
         icon: train,
         iconBg: "#8e8e8e",
         date: "Février 2023 - Avril 2023",
@@ -113,7 +111,6 @@ export const experiences = [
     },
     {
         title: "Fate of the same",
-        company_name: "",
         icon: game,
         iconBg: "#8e8e8e",
         date: "Janvier 2023",
@@ -126,7 +123,6 @@ export const experiences = [
     },
     {
         title: "Nuit de L\'info 2022",
-        company_name: "",
         icon: moon,
         iconBg: "#668ac0",
         date: "Décembre 2022",
@@ -139,7 +135,6 @@ export const experiences = [
     },
     {
         title: "Nuit de L\'info 2023",
-        company_name: "",
         icon: moon,
         iconBg: "#668ac0",
         date: "Décembre 2023",
@@ -152,7 +147,6 @@ export const experiences = [
     },
     {
         title: "Bot Vinted pour Discord",
-        company_name: "",
         icon: bot,
         iconBg: "#8e8e8e",
         date: "Février 2023",
@@ -165,7 +159,6 @@ export const experiences = [
     },
     {
         title: "Site web Escape Game",
-        company_name: "",
         icon: escape_game,
         iconBg: "#6177c8",
         date: "Septembre 2022",
@@ -178,7 +171,6 @@ export const experiences = [
     },
     {
         title: "Site web Controverse",
-        company_name: "",
         icon: controverse,
         iconBg: "#a9a9a9",
         date: "Septembre 2022",
@@ -191,7 +183,6 @@ export const experiences = [
     },
     {
         title: "Bot de trading",
-        company_name: "",
         icon: bot,
         iconBg: "#8e8e8e",
         date: "mars 2022",
@@ -230,42 +221,42 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Portolio',
         description: 'Mon portfolio',
-        link: 'https://github.com/Suyano/TrucBidule',
+        link: 'https://github.com/Clement-Garro/portfolio',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Gradhire',
         description: 'Site web pour aider les étudiants en informatiques de montpellier à trouver un stage/alternance',
-        link: 'https://github.com/Suyano/TrucBidule',
+        link: 'https://github.com/GradHire/GradHire-website',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Aventurier du rail',
         description: 'Jeu en JavaFX',
-        link: 'https://github.com/Suyano/TrucBidule',
+        link: 'https://github.com/Daniil-Hirchyts/Aventuriers-du-Rail---Autour-du-Monde-2023',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Fate of the same',
         description: 'Jeu vidéo conçu lors de la 7ᵉ édition du Code Game Jam 2023 à l\'IUT de Montpellier-Sète.',
-        link: 'https://github.com/Suyano/TrucBidule',
+        link: 'https://github.com/Clement-Garro/Game-jam-2023',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Nuit de L\'info 2022',
         description: 'Site web pour la prévention sur les MST',
-        link: 'https://github.com/Suyano/TrucBidule',
+        link: 'https://github.com/Clement-Garro/Nuit-de-l-info-2022',
     },
     {
         iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Nuit de L\'info 2023',
         description: 'Site web sur la prevention climatique',
-        link: 'https://github.com/Suyano/TrucBidule',
+        link: 'https://github.com/Bruh-NDI/NDI',
     },
     {
         iconUrl: pricewise,

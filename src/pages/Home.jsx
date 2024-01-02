@@ -71,15 +71,16 @@ const Home = () => {
                 <Suspense fallback={<Loader/>}>
                     <directionalLight
                         intensity={2}
-                        position={[8, 1, 2]}
+                        position={[-10, 10, 50]}
                     />
                     <ambientLight
-                        intensity={0.5}
+                        intensity={1.5}
+                        color={"#f6a447"}
                     />
                     <hemisphereLight
-                        skyColor={"#b1e1ff"}
+                        skyColor={"#fbd05b"}
                         groundColor={"#000000"}
-                        intensity={1.5}
+                        intensity={2.5}
                     />
 
                     <Bird

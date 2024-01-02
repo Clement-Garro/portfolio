@@ -24,7 +24,11 @@ const renderContent = {
             <br/>
             Un développeur web & logiciel français
             <br/>
-            Ce Portfolio est toujours en cours de construction, Donc des changements peuvent être apportés à tout moment.
+            Ce Portfolio est toujours en cours de construction,
+            <br/>
+            Donc des changements peuvent être apportés à tout moment.
+            <br/>
+            Aujourd'hui, je suis en train de transformer l'île principal par mon nouveau modele 3D.
         </h1>
     ),
     2: (

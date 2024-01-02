@@ -28,8 +28,8 @@ const Home = () => {
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
-        let screenPosition = [0,-6.5,-43];
-        let rotation = [0.1,4.7,0]
+        let screenPosition = [0, -8, -12];
+        let rotation = [0,29.8,0]
 
         if (window.innerWidth < 768) {
             screenScale = [0.9, 0.9, 0.9]
@@ -89,6 +89,12 @@ const Home = () => {
                     <Sky
                         isRotating={isRotating}
                     />
+                    <Dragon
+                        isRotating={isRotating}
+                        scale={dragonScale}
+                        position={dragonPosition}
+                        rotation={[0, 1.5, 0]}
+                    />
                     <Island
                         scale={islandScale}
                         position={islandPosition}
@@ -96,12 +102,6 @@ const Home = () => {
                         isRotating={isRotating}
                         setIsRotating={setIsRotating}
                         setCurrentStage={setCurrentStage}
-                    />
-                    <Dragon
-                        isRotating={isRotating}
-                        scale={dragonScale}
-                        position={dragonPosition}
-                        rotation={[0, 1.5, 0]}
                     />
                 </Suspense>
             </Canvas>

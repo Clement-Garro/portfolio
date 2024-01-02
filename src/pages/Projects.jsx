@@ -14,7 +14,7 @@ const Projects = () => {
             </h1>
 
             <p className='text-slate-500 mt-2 leading-relaxed'>
-                Description de moi et des projets que g preferere faire
+                Voici quelques projets que j'ai réalisé.
             </p>
 
             <div className='flex flex-wrap my-20 gap-16'>

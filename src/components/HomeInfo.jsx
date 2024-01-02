@@ -4,7 +4,7 @@ const InfoBox = ({text, link, btnText}) => {
     return (
         <div className="info-box">
             <p
-                className="font-medium sm:text-xl text-center">
+                className="font-medium sm:text-xl text-center lg:text-2xl ">
                 {text}
             </p>
             <Link to={link} className="neo-brutalism-white neo-btn">
@@ -18,7 +18,7 @@ const InfoBox = ({text, link, btnText}) => {
 const renderContent = {
     1: (
         <h1
-            className="sm:text-sm sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5"
+            className="sm:text-sm sm:leading-snug lg:text-2xl lg:leading-normal text-center neo-brutalism-blue py-4 px-8 text-white mx-5"
         >
             Bonjour, Je suis <span className="font-semibold">Clement</span>
             <br/>
@@ -29,6 +29,7 @@ const renderContent = {
     ),
     2: (
         <InfoBox
+
             text="Je suis un développeur web & logiciel passionné par l'informatique de manière générale. Pour en savoir plus sur moi, cliquez sur le bouton ci-dessous."
             link="/about"
             btnText="En apprendre plus"

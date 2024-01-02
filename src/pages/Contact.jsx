@@ -8,13 +8,13 @@ import { Alert, Loader } from "../components/components.js";
 
 const Contact = () => {
     const formRef = useRef();
-    const [form, setForm] = useState({ name: "", email: "", message: "" });
+    const [form, setForm] = useState({ nom: "", email: "", message: "" });
     const { alert, showAlert, hideAlert } = useAlert();
     const [loading, setLoading] = useState(false);
     const [currentAnimation, setCurrentAnimation] = useState("idle");
 
-    const handleChange = ({ target: { name, value } }) => {
-        setForm({ ...form, [name]: value });
+    const handleChange = ({ target: { nom, value } }) => {
+        setForm({ ...form, [nom]: value });
     };
 
     const handleFocus = () => setCurrentAnimation("walk");
@@ -30,7 +30,7 @@ const Contact = () => {
                 import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
                 import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
                 {
-                    from_name: form.name,
+                    from_name: form.nom,
                     to_name: "Clement Garro",
                     from_email: form.email,
                     to_email: "garro.clement83@gmail.com",
@@ -51,7 +51,7 @@ const Contact = () => {
                         hideAlert(false);
                         setCurrentAnimation("idle");
                         setForm({
-                            name: "",
+                            nom: "",
                             email: "",
                             message: "",
                         });
@@ -72,7 +72,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='relative flex lg:flex-row flex-col max-container'>
+        <section className='relative flex lg:flex-row flex-col max-container p-0'>
             {alert.show && <Alert {...alert} />}
 
             <div className='flex-1 min-w-[50%] flex flex-col justify-center'>
@@ -84,14 +84,14 @@ const Contact = () => {
                     className='w-full flex flex-col gap-7 mt-14'
                 >
                     <label className='text-black-500 font-semibold'>
-                        Name
+                        Prénom ou Nom
                         <input
                             type='text'
                             name='name'
                             className='input'
-                            placeholder='John'
+                            placeholder='Clément'
                             required
-                            value={form.name}
+                            value={form.nom}
                             onChange={handleChange}
                             onFocus={handleFocus}
                             onBlur={handleBlur}
@@ -103,7 +103,7 @@ const Contact = () => {
                             type='email'
                             name='email'
                             className='input'
-                            placeholder='John@gmail.com'
+                            placeholder='votremail@gmail.com'
                             required
                             value={form.email}
                             onChange={handleChange}
@@ -112,12 +112,12 @@ const Contact = () => {
                         />
                     </label>
                     <label className='text-black-500 font-semibold'>
-                        Your Message
+                        Votre Message
                         <textarea
                             name='message'
                             rows='4'
                             className='textarea'
-                            placeholder='Write your thoughts here...'
+                            placeholder='Écriver votre pensée ici...'
                             value={form.message}
                             onChange={handleChange}
                             onFocus={handleFocus}
@@ -132,7 +132,7 @@ const Contact = () => {
                         onFocus={handleFocus}
                         onBlur={handleBlur}
                     >
-                        {loading ? "Sending..." : "Submit"}
+                        {loading ? "Envoi en cours..." : "Envoyer"}
                     </button>
                 </form>
             </div>

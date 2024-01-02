@@ -10,7 +10,7 @@ import React, {useRef, useEffect} from "react";
 import {useGLTF} from "@react-three/drei";
 import {useFrame, useThree} from "@react-three/fiber";
 import {a} from "@react-spring/three";
-import islandeScene from "../assets/3d/island.glb";
+import islandeScene from "../assets/3d/new_island.glb";
 
 const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
     const islandRef = useRef();
@@ -86,23 +86,6 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
             islandRef.current.rotation.y += rotationSpeed.current;
         } else {
             const rotation = islandRef.current.rotation.y;
-
-            /**
-             * Normalize the rotation value to ensure it stays within the range [0, 2 * Math.PI].
-             * The goal is to ensure that the rotation value remains within a specific range to
-             * prevent potential issues with very large or negative rotation values.
-             *  Here's a step-by-step explanation of what this code does:
-             *  1. rotation % (2 * Math.PI) calculates the remainder of the rotation value when divided
-             *     by 2 * Math.PI. This essentially wraps the rotation value around once it reaches a
-             *     full circle (360 degrees) so that it stays within the range of 0 to 2 * Math.PI.
-             *  2. (rotation % (2 * Math.PI)) + 2 * Math.PI adds 2 * Math.PI to the result from step 1.
-             *     This is done to ensure that the value remains positive and within the range of
-             *     0 to 2 * Math.PI even if it was negative after the modulo operation in step 1.
-             *  3. Finally, ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI) applies another
-             *     modulo operation to the value obtained in step 2. This step guarantees that the value
-             *     always stays within the range of 0 to 2 * Math.PI, which is equivalent to a full
-             *     circle in radians.
-             */
             const normalizedRotation =
                 ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
@@ -142,40 +125,94 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
             document.removeEventListener('keyup', handleKeyUp);
         }
     }, [gl, handlePointerDown, handlePointerUp, handlePointerMove, handleKeyDown, handleKeyUp])
-
     return (
-        <a.group ref={islandRef} {...props}>
-            <mesh
-                geometry={nodes.polySurface944_tree_body_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
-            <mesh
-                geometry={nodes.polySurface945_tree1_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
-            <mesh
-                geometry={nodes.polySurface946_tree2_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
-            <mesh
-                geometry={nodes.polySurface947_tree1_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
-            <mesh
-                geometry={nodes.polySurface948_tree_body_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
-            <mesh
-                geometry={nodes.polySurface949_tree_body_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
-            <mesh
-                geometry={nodes.pCube11_rocks1_0.geometry}
-                material={materials.PaletteMaterial001}
-            />
+        <a.group ref={islandRef} {...props} >
+            <group position={[0, 0, 0]}>
+                <mesh
+                    geometry={nodes.Island.geometry}
+                    material={materials[nodes.Island.material.name]}
+                />
+                <mesh
+                    geometry={nodes.Island_1.geometry}
+                    material={materials[nodes.Island_1.material.name]}
+                />
+                <mesh
+                    geometry={nodes.Island_2.geometry}
+                    material={materials[nodes.Island_2.material.name]}
+                />
+                <mesh
+                    geometry={nodes.Island_3.geometry}
+                    material={materials[nodes.Island_3.material.name]}
+                />
+                <mesh
+                    geometry={nodes.Island_4.geometry}
+                    material={materials[nodes.Island_4.material.name]}
+                />
+            </group>
+            <group position={[0, 7, 0]} scale={[0.5, 0.5, 0.5]}>
+                <mesh
+                    geometry={nodes.House_skin1.geometry}
+                    material={materials[nodes.House_skin1.material.name]}
+                />
+                <mesh
+                    geometry={nodes.House_skin1_1.geometry}
+                    material={materials[nodes.House_skin1_1.material.name]}
+                />
+                <mesh
+                    geometry={nodes.House_skin1_2.geometry}
+                    material={materials[nodes.House_skin1_2.material.name]}
+                />
+                <mesh
+                    geometry={nodes.House_skin1_3.geometry}
+                    material={materials[nodes.House_skin1_3.material.name]}
+                />
+                <mesh
+                    geometry={nodes.House_skin1_4.geometry}
+                    material={materials[nodes.House_skin1_4.material.name]}
+                />
+            </group>
+            <Tree nodes={nodes} materials={materials} position={[0.3, 6.5, -3]} scale={[0.5,0.5,0.5]} />
+            <Tree nodes={nodes} materials={materials} position={[2, 6.5, -2]} scale={[0.4,0.4,0.4]} />
+            <Tree nodes={nodes} materials={materials} position={[-2, 6.5, -1.75]} scale={[0.35,0.35,0.35]} />
+            <Tree nodes={nodes} materials={materials} position={[-0.35, 6.5, 2]} scale={[0.45,0.45,0.45]} />
+            <Tree nodes={nodes} materials={materials} position={[2, 6.5, 1.25]} scale={[0.5,0.5,0.5]} />
         </a.group>
     );
 }
 
-export default Island;
+function Tree({nodes,materials, ...props}) {
+    return (
+        <group {...props}>
+            <mesh
+                geometry={nodes.PineTreeGreen.geometry}
+                material={materials[nodes.PineTreeGreen.material.name]}
+            />
+            <mesh
+                geometry={nodes.PineTreeGreen_1.geometry}
+                material={materials[nodes.PineTreeGreen_1.material.name]}
+            />
+            <mesh
+                geometry={nodes.PineTreeGreen_2.geometry}
+                material={materials[nodes.PineTreeGreen_2.material.name]}
+            />
+            <mesh
+                geometry={nodes.PineTreeGreen_3.geometry}
+                material={materials[nodes.PineTreeGreen_3.material.name]}
+            />
+            <mesh
+                geometry={nodes.PineTreeGreen_4.geometry}
+                material={materials[nodes.PineTreeGreen_4.material.name]}
+            />
+            <mesh
+                geometry={nodes.PineTreeGreen_5.geometry}
+                material={materials[nodes.PineTreeGreen_5.material.name]}
+            />
+            <mesh
+                geometry={nodes.PineTreeGreen_6.geometry}
+                material={materials[nodes.PineTreeGreen_6.material.name]}
+            />
+        </group>
+    )
+}
 
+export default Island;

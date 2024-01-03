@@ -28,7 +28,11 @@ const renderContent = {
             <br/>
             Donc des changements peuvent être apportés à tout moment.
             <br/>
-            Aujourd'hui, je transforme l'île principal par mon nouveau modele 3D.
+            Aujourd'hui, je suis en pose pour mes études.
+            <br/>
+            Je compte faire de page plus détail sur mes projets.
+            <br/>
+            Merci de votre compréhension.
         </h1>
     ),
     2: (

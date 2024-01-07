@@ -70,6 +70,10 @@ body:has(.card[data-color="green"]:hover) {
         @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-green pt-4 pb-12 px-8;
     }
 
+    .project-info-box {
+        @apply mx-auto relative flex text-black flex-col gap-3 max-w-4xl neo-brutalism-white-rounded pt-4 px-8 mb-6;
+    }
+
     .neo-btn {
         @apply py-3 px-6 rounded-lg text-blue-500 text-center font-semibold sm:w-1/2 w-[90%] -bottom-5 absolute mx-auto right-0 left-0 flex justify-center items-center gap-3;
     }
@@ -138,6 +142,10 @@ body:has(.card[data-color="green"]:hover) {
     background: linear-gradient(135deg, #0a1647 -20%, #e4e7e4 120%);
 }
 
+.block-container .btn-back-gray {
+    background: linear-gradient(135deg, #e4e7e4 -20%, #0a1647 120%);
+}
+
 .block-container .btn-front {
     position: absolute;
     inset: 0;
@@ -177,4 +185,43 @@ body:has(.card[data-color="green"]:hover) {
     border: #fff;
     box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+.neo-brutalism-white-rounded {
+    background: #fff;
+    border: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
+    0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 0.83rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.67rem;
+    font-weight: bold;
 }

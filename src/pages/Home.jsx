@@ -4,12 +4,12 @@ import {Canvas} from "@react-three/fiber";
 import { Map, Sky, Bird, Dragon} from "../models";
 import HomeInfo from "../components/HomeInfo.jsx";
 
-import sakura from "../assets/sakura.mp3"
+import music from "../assets/music.mp3"
 import {soundon, soundoff} from "../assets/icons/index.js";
 
 
 const Home = () => {
-    const audioRef = useRef(new Audio(sakura));
+    const audioRef = useRef(new Audio(music));
     audioRef.current.loop = true;
     audioRef.current.volume = 0.01;
     const [isRotating, setIsRotating] = useState(false)

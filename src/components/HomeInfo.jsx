@@ -27,12 +27,6 @@ const renderContent = {
             Ce Portfolio est toujours en cours de construction,
             <br/>
             Donc des changements peuvent être apportés à tout moment.
-            <br/>
-            Aujourd'hui, je suis en pose pour mes études.
-            <br/>
-            Je compte faire de page plus détail sur mes projets.
-            <br/>
-            Merci de votre compréhension.
         </h1>
     ),
     2: (

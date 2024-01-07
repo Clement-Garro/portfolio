@@ -14,7 +14,7 @@ const About = () => {
                 Bonjour, Je suis{" "}
                 <span className='gradient_text font-semibold drop-shadow'>
           {" "}
-                    Clement
+                    Clément
         </span>{" "}
                 👋
             </h1>

@@ -23,6 +23,7 @@ import mySQL from './mySQL.svg'
 import postgreSQL from './postgreSQL.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import gradhire from "./gradhire.png"
 
 export {
     css,
@@ -49,5 +50,6 @@ export {
     vite,
     postgreSQL,
     mySQL,
-    soundoff
+    soundoff,
+    gradhire,
 }

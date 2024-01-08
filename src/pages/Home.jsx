@@ -15,16 +15,22 @@ const Home = () => {
     const [isRotating, setIsRotating] = useState(false)
     const [currentStage, setCurrentStage] = useState(1)
     const [isPlayingMusic, setIsPlayingMusic] = useState(true)
+    const [hasUserInteracted, setHasUserInteracted] = useState(false);
 
     useEffect(() => {
-        if (isPlayingMusic) {
-            audioRef.current.play()
+        if (isPlayingMusic && hasUserInteracted) {
+            audioRef.current.play();
         }
 
         return () => {
-            audioRef.current.pause()
-        }
-    }, [isPlayingMusic]);
+            audioRef.current.pause();
+        };
+    }, [isPlayingMusic, hasUserInteracted]);
+
+    const handleAudioButtonClick = () => {
+        setIsPlayingMusic(!isPlayingMusic);
+        setHasUserInteracted(true);
+    };
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
@@ -108,7 +114,16 @@ const Home = () => {
             </Canvas>
 
             <div className="absolute bottom-2 left-2">
-                <img src={!isPlayingMusic ? soundoff : soundon}  alt={'soundon'} className="w-10 h-10 cursor-pointer object-contain" onClick={() => setIsPlayingMusic(!isPlayingMusic)} />
+                <button
+                    onClick={handleAudioButtonClick}
+                    className="focus:outline-none"
+                >
+                    <img
+                        src={!isPlayingMusic ? soundoff : soundon}
+                        alt={"soundon"}
+                        className="w-10 h-10 cursor-pointer object-contain"
+                    />
+                </button>
             </div>
         </section>
     )

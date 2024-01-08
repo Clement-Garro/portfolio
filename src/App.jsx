@@ -1,7 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import { Home, About, Projects, Contact, ProjetInfo } from "./pages";
-import {Toaster} from "react-hot-toast";
 
 const App = () => {
     return (
@@ -16,10 +15,6 @@ const App = () => {
                     <Route path="/project/:name" element={<ProjetInfo />} />
                 </Routes>
             </Router>
-            <Toaster
-                position="bottom-right"
-                reverseOrder={false}
-            />
         </main>
     );
 };

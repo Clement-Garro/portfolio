@@ -17,7 +17,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? "blue_gradient_text px-2.5 rounded-3xl"
-                            : "text-black px-2.5 transition-all duration-300 ease-in-out hover:glow hover:blue_gradient_text"
+                            : "text-black px-2.5 hover:blue_gradient_text"
                     }
                 >
                     About

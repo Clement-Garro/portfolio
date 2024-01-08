@@ -1,15 +1,15 @@
 import Loader from "../components/Loader.jsx";
 import React, {Suspense, useState, useEffect, useRef} from "react";
 import {Canvas} from "@react-three/fiber";
-import { Island, Sky, Bird, Dragon} from "../models";
+import { Map, Sky, Bird, Dragon} from "../models";
 import HomeInfo from "../components/HomeInfo.jsx";
 
-import sakura from "../assets/sakura.mp3"
+import music from "../assets/music.mp3"
 import {soundon, soundoff} from "../assets/icons/index.js";
 
 
 const Home = () => {
-    const audioRef = useRef(new Audio(sakura));
+    const audioRef = useRef(new Audio(music));
     audioRef.current.loop = true;
     audioRef.current.volume = 0.01;
     const [isRotating, setIsRotating] = useState(false)
@@ -28,7 +28,7 @@ const Home = () => {
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
-        let screenPosition = [0, -8, -12];
+        let screenPosition = [0, -8, -16];
         let rotation = [0,29.8,0]
 
         if (window.innerWidth < 768) {
@@ -49,7 +49,7 @@ const Home = () => {
         }
         else {
             screenScale = [140, 140, 140]
-            screenPosition = [0, -7, -7]
+            screenPosition = [0, -7, -3]
         }
 
         return [screenScale, screenPosition]
@@ -71,15 +71,16 @@ const Home = () => {
                 <Suspense fallback={<Loader/>}>
                     <directionalLight
                         intensity={2}
-                        position={[8, 1, 2]}
+                        position={[-10, 10, 50]}
                     />
                     <ambientLight
-                        intensity={0.5}
+                        intensity={1.5}
+                        color={"#f6a447"}
                     />
                     <hemisphereLight
-                        skyColor={"#b1e1ff"}
+                        skyColor={"#fbd05b"}
                         groundColor={"#000000"}
-                        intensity={1.5}
+                        intensity={2.5}
                     />
 
                     <Bird
@@ -95,7 +96,7 @@ const Home = () => {
                         position={dragonPosition}
                         rotation={[0, 1.5, 0]}
                     />
-                    <Island
+                    <Map
                         scale={islandScale}
                         position={islandPosition}
                         rotation={islandRotation}

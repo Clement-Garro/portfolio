@@ -1,6 +1,10 @@
 import React from 'react';
-
+import start from '../../assets/railihm/start.png';
+import game from '../../assets/railihm/game.png';
+import end from '../../assets/railihm/end.png';
+import selection from '../../assets/railihm/selection.png';
 const AventuriersDuRail = () => {
+    const imagesContext = [start, selection, game, end];
     return (
         <section className="project-info-box">
             <div className="pb-5">
@@ -20,7 +24,10 @@ const AventuriersDuRail = () => {
                     </span>
                 </h2>
                 <p>
-                    Le projet "Aventuriers du Rail Autour du Monde" s'inscrit dans le cadre du développement d'une implémentation en Java du jeu de plateau éponyme. Se concentrant sur le plateau "Monde", le projet a été réalisé en plusieurs phases, mettant en œuvre les principes du développement orienté objets et les algorithmes de graphes.
+                    Le projet "Aventuriers du Rail Autour du Monde" s'inscrit dans le cadre du développement d'une
+                    implémentation en Java du jeu de plateau éponyme. Se concentrant sur le plateau "Monde", le projet a
+                    été réalisé en plusieurs phases, mettant en œuvre les principes du développement orienté objets et
+                    les algorithmes de graphes.
                 </p>
             </div>
 
@@ -47,6 +54,21 @@ const AventuriersDuRail = () => {
                 </h2>
                 <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
             </div>
+
+            <div>
+                <h2 className="subhead-text pb-4">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Galerie
+                    </span>
+                </h2>
+            </div>
+            {imagesContext.map((image, index) => (
+                <div className="pb-5" key={index}>
+                    <img src={image} alt="railihm" className="w-full h-full object-contain"/>
+                </div>
+            ))}
+
+
         </section>
     );
 };

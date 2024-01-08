@@ -1,6 +1,9 @@
 import React from 'react';
-
+import acceuil from '../../assets/gradhire/acceuil.png';
+import dashboard from '../../assets/gradhire/dashboard.png';
+import offres from '../../assets/gradhire/offres.png';
 const Gradhire = () => {
+    const imagesContext = [acceuil, dashboard, offres];
     return (
         <section className="project-info-box">
             <div className="pb-5">
@@ -95,6 +98,24 @@ const Gradhire = () => {
                     <li>Giovanni Gozzo - Étudiant(e) à IUT MONTPELLIER-SETE</li>
                     <li>Marius Brouty - Étudiant(e) à IUT MONTPELLIER-SETE</li>
                 </ul>
+            </div>
+
+            <div className="pb-5">
+                <h2 className="subhead-text pb-4">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Galerie
+                    </span>
+                </h2>
+                <div className="flex flex-wrap gap-4">
+                    {imagesContext.map((image, index) => (
+                        <img
+                            src={image}
+                            alt={`Gradhire ${index}`}
+                            key={index}
+                            className="w-full h-full object-contain"
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );

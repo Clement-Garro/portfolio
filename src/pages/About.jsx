@@ -21,7 +21,10 @@ const About = () => {
 
             <div className='mt-5 flex flex-col gap-3 text-slate-500'>
                 <p>
-                    Un développeur web & logiciel français.
+                    je suis un étudiant en 2eme année de BUT informatique à l'IUT de Montpellier. <br/>
+                    Je suis passionné par l'informatique, la culture japonaise, les jeux vidéo et le sport.<br/>
+                    Mon enthousiasme pour la technologie m'a poussé à explorer la construction d'ordinateurs et à maîtriser plusieurs langages de programmation. <br/>
+                    Mon objectif est de trouver une alternance dans le domaine du développement d'applications ou web, où je pourrais approfondir mes compétences et m'épanouir davantage dans ces domaines qui me passionnent.
                 </p>
             </div>
 

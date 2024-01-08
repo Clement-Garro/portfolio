@@ -1,6 +1,10 @@
 import React from 'react';
-
+import about from '../../assets/portfolio/about.png';
+import contact from '../../assets/portfolio/contact.png';
+import home from '../../assets/portfolio/home.png';
+import projects from '../../assets/portfolio/projects.png';
 const Portfolio = () => {
+    const imagesContext = [home, about, projects, contact];
     return (
         <>
             <section className="project-info-box">
@@ -75,6 +79,19 @@ const Portfolio = () => {
                         <li>Développement web</li>
                     </ul>
                 </div>
+
+                <div>
+                    <h2 className="subhead-text pb-4">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Galerie
+                    </span>
+                    </h2>
+                </div>
+                {imagesContext.map((image, index) => (
+                    <div className="pb-5" key={index}>
+                        <img src={image} alt="railihm" className="w-full h-full object-contain"/>
+                    </div>
+                ))}
             </section>
         </>
     );

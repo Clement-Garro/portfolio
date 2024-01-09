@@ -23,8 +23,11 @@ const About = () => {
                 <p>
                     je suis un étudiant en 2eme année de BUT informatique à l'IUT de Montpellier. <br/>
                     Je suis passionné par l'informatique, la culture japonaise, les jeux vidéo et le sport.<br/>
-                    Mon enthousiasme pour la technologie m'a poussé à explorer la construction d'ordinateurs et à maîtriser plusieurs langages de programmation. <br/>
-                    Mon objectif est de trouver une alternance dans le domaine du développement d'applications ou web, où je pourrais approfondir mes compétences et m'épanouir davantage dans ces domaines qui me passionnent.
+                    Mon enthousiasme pour la technologie m'a poussé à explorer la construction d'ordinateurs et à
+                    maîtriser plusieurs langages de programmation. <br/>
+                    Mon objectif est de trouver une alternance dans le domaine du développement d'applications ou web,
+                    où je pourrais approfondir mes compétences et m'épanouir davantage dans ces domaines qui me
+                    passionnent.
                 </p>
             </div>
 
@@ -97,6 +100,15 @@ const About = () => {
                         ))}
                     </VerticalTimeline>
                 </div>
+            </div>
+
+            <div className="py-16">
+                <h1 className='head-text gradient_text font-semibold drop-shadow pb-4'>
+                    Futur
+                </h1>
+                <p>
+                    Je souhaite poursuivre des études d'ingénierie pour devenir ingénieur logiciel. Mon objectif est de maîtriser les compétences nécessaires pour concevoir des solutions informatiques innovantes et contribuer au progrès technologique. J'aspire à intégrer une école d'ingénieurs pour développer mes connaissances en programmation et acquérir une compréhension approfondie des concepts informatiques fondamentaux. Mon futur est orienté vers une carrière où je pourrai mettre en pratique ma passion pour le développement de logiciels.
+                </p>
             </div>
 
             <hr className='border-slate-200'/>

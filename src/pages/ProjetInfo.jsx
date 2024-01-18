@@ -22,7 +22,7 @@ const ProjetInfo = () => {
 
     console.log(fileName)
     return (
-        <section className="w-full h-screen pt-28 overflow-y-scroll relative bg-[linear-gradient(#138086,#534666)]">
+        <section className={`w-full h-screen ${JsxComponent ?  'pt-28' : ''} overflow-y-scroll relative bg-[linear-gradient(#138086,#534666)]`}>
             <div
                 className={`flex ${
                     JsxComponent ? 'top-28' : 'h-screen'

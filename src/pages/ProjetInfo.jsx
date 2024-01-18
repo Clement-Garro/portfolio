@@ -23,11 +23,9 @@ const ProjetInfo = () => {
 
     console.log(fileName)
     return (
-        <section className="w-full h-screen overflow-y-scroll relative" style={{
-            backgroundImage: `url(${background})`,
-            backgroundSize: 'cover',
-        }}>
-            <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        <section className="w-full h-screen overflow-y-scroll relative bg-[linear-gradient(#138086,#534666)] backdrop-blur-[10px] bg-cover bg-center"
+        >
+            <div className="absolute h-screen left-0 right-0 z-10 flex items-center justify-center">
                 {error || !JsxComponent ? <InCreation /> : <JsxComponent />}
             </div>
         </section>

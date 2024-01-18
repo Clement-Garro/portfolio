@@ -16,8 +16,8 @@ const Navbar = () => {
                     to="/about"
                     className={({ isActive }) =>
                         isActive
-                            ? "blue_gradient_text px-2.5 rounded-3xl"
-                            : "text-black px-2.5 hover:blue_gradient_text"
+                            ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
+                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text"
                     }
                 >
                     About
@@ -27,8 +27,8 @@ const Navbar = () => {
                     to="/projects"
                     className={({ isActive }) =>
                         isActive
-                            ? "blue_gradient_text px-2.5 rounded-3xl"
-                            : "text-black px-2.5 hover:blue_gradient_text"
+                            ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
+                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text"
                     }
                 >
                     Projects
@@ -38,8 +38,8 @@ const Navbar = () => {
                     to="/contact"
                     className={({ isActive }) =>
                         isActive
-                            ? "blue_gradient_text px-2.5 rounded-3xl"
-                            : "text-black px-2.5 ease-in-out hover:blue_gradient_text"
+                            ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
+                            : "text-black px-1 lg:px-2.5 ease-in-out hover:blue_gradient_text"
                     }
                 >
                     Contact
@@ -48,7 +48,7 @@ const Navbar = () => {
                     href={cv}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-black px-2.5 transition-all duration-300 ease-in-out hover:glow hover:blue_gradient_text"
+                    className="text-black px-1 lg:px-2.5 transition-all duration-300 ease-in-out hover:glow hover:blue_gradient_text"
                 >
                     CV
                 </a>

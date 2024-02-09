@@ -10,7 +10,7 @@ import {
     pricewise,
     react,
     tailwindcss, train,
-    twitter, vite, gradhire,
+    twitter, vite, gradhire, C, Cplusplus
 } from "../assets/icons";
 
 export const skills = [
@@ -52,12 +52,12 @@ export const skills = [
     {
         imageUrl: java,
         name: "Java",
-        type: "Frontend",
+        type: "FullStack",
     },
     {
         imageUrl: vite,
         name: "Vite",
-        type: "Frontend",
+        type: "Framework",
     },
     {
         imageUrl: postgreSQL,
@@ -67,6 +67,16 @@ export const skills = [
     {
         imageUrl: mySQL,
         name: "MySQL",
+        type: "Backend",
+    },
+    {
+        imageUrl: C,
+        name: "C",
+        type: "Backend",
+    },
+    {
+        imageUrl: Cplusplus,
+        name: "C++",
         type: "Backend",
     },
 ];

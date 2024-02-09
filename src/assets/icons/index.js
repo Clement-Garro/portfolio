@@ -24,6 +24,8 @@ import postgreSQL from './postgreSQL.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import gradhire from "./gradhire.png"
+import C from "./C.png"
+import Cplusplus from "./Cplusplus.png"
 
 export {
     css,
@@ -52,4 +54,6 @@ export {
     mySQL,
     soundoff,
     gradhire,
+    C,
+    Cplusplus
 }

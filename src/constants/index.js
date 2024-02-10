@@ -152,9 +152,16 @@ export const projects = [
     {
         iconUrl: train,
         theme: 'btn-back-yellow',
-        name: 'Aventurier du rail',
-        description: 'Jeu en JavaFX',
-        link: '/project/aventurier-du-rail',
+        name: 'Aventurier du rail IHM',
+        description: 'Jeu en JavaFX pour un IHM de l\'aventurier du rail version Graphe',
+        link: '/project/aventurier-du-rail-ihm',
+    },
+    {
+        iconUrl: train,
+        theme: 'btn-back-red',
+        name: 'Aventurier du Graphe',
+        description: 'développement technique des technologies de l\'aventurier du rail',
+        link: '/project/aventurier-du-rail-graphe',
     },
     {
         iconUrl: game,
@@ -162,6 +169,13 @@ export const projects = [
         name: 'Fate of the same',
         description: 'Jeu vidéo conçu lors de la 7ᵉ édition du Code Game Jam 2023 à l\'IUT de Montpellier-Sète.',
         link: '/project/fate-of-the-same',
+    },
+    {
+        iconUrl: game,
+        theme: 'btn-back-pink',
+        name: 'shadow of memory',
+        description: 'Jeu vidéo conçu lors de la 8ᵉ édition du Code Game Jam 2024 à l\'IUT de Montpellier-Sète.',
+        link: '/project/shadow-of-memory',
     },
     {
         iconUrl: moon,

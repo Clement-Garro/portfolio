@@ -22,33 +22,10 @@ const About = () => {
             <div className='mt-5 flex flex-col gap-4 text-slate-500'>
                 <h3 className='subhead-text'>Qui suis-je ?</h3>
                 <p>
-                    Je suis un étudiant en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique
-                    à l'IUT de Montpellier. Passionné par l'informatique, la culture japonaise, les jeux vidéo et le
+                    Passionné par l'informatique, la culture japonaise, les jeux vidéo et le
                     sport, je trouve un équilibre entre mes études et mes centres d'intérêt.
-                </p>
-                <h3 className='subhead-text'> Qu’est-ce que j’aime ?</h3>
-                <p>
-                    Mon enthousiasme pour la technologie m'a naturellement conduit à explorer la construction
-                    d'ordinateurs et à maîtriser plusieurs langages de programmation. En parallèle, ma fascination pour
-                    la culture japonaise, les jeux vidéo et le sport enrichit mon quotidien et me permet de cultiver une
-                    curiosité sans cesse renouvelée.
-                </p>
-
-                <h3 className='subhead-text'>Quelles sont mes compétences et mes capacités ?</h3>
-                <p>
-                    Mes compétences résident dans ma capacité à penser de manière stratégique, à résoudre des problèmes
-                    de manière efficace et à atteindre mes objectifs avec détermination. Je suis à l'aise dans des
-                    domaines tels que le développement d'idées novatrices, l'analyse de données complexes et la
-                    planification à long terme. Mon approche méthodique et ma soif de connaissances me permettent
-                    d'atteindre des niveaux élevés de réussite dans mes entreprises.
-                </p>
-                <h3 className='subhead-text'>Objectif actuel ?</h3>
-                <p>
-                    Mon objectif actuel est de trouver une alternance dans le domaine du développement d'applications ou
-                    web. Cette opportunité me permettra non seulement d'approfondir mes compétences techniques, mais
-                    aussi de m'épanouir pleinement dans des domaines qui me passionnent véritablement. Je suis convaincu
-                    que cette expérience professionnelle sera le tremplin idéal pour concrétiser mes aspirations dans le
-                    domaine de l'informatique.
+                    Je suis un étudiant en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique
+                    à l'IUT de Montpellier.
                 </p>
                 <h3 className='subhead-text'>Traits de personnalité :</h3>
                 <li>
@@ -71,6 +48,22 @@ const About = () => {
                     Identité : Je suis plus enclin à être confiant et déterminé dans mes actions, faisant preuve
                     d'assurance dans la poursuite de mes objectifs et de mes aspirations.
                 </li>
+                <h3 className='subhead-text'> Qu’est-ce que j’aime ?</h3>
+                <p>
+                    Mon enthousiasme pour la technologie m'a naturellement conduit à explorer la construction
+                    d'ordinateurs et à maîtriser plusieurs langages de programmation. En parallèle, ma fascination pour
+                    la culture japonaise, les jeux vidéo et le sport enrichit mon quotidien et me permet de cultiver une
+                    curiosité sans cesse renouvelée.
+                </p>
+
+                <h3 className='subhead-text'>Quelles sont mes compétences et mes capacités ?</h3>
+                <p>
+                    Mes compétences résident dans ma capacité à penser de manière stratégique, à résoudre des problèmes
+                    de manière efficace et à atteindre mes objectifs avec détermination. Je suis à l'aise dans des
+                    domaines tels que le développement d'idées novatrices, l'analyse de données complexes et la
+                    planification à long terme. Mon approche méthodique et ma soif de connaissances me permettent
+                    d'atteindre des niveaux élevés de réussite dans mes entreprises.
+                </p>
             </div>
 
             <div className='py-10 flex flex-col'>
@@ -145,10 +138,19 @@ const About = () => {
                 </div>
             </div>
 
-            <div className="py-16">
-            <h1 className='head-text gradient_text font-semibold drop-shadow pb-4'>
-                    Futur
+            <div className="py-16 gap-4 flex flex-col">
+                <h1 className='head-text gradient_text font-semibold drop-shadow pb-4 '>
+                    Objectif
                 </h1>
+                <h3 className='subhead-text'>Actuel </h3>
+                <p>
+                    Mon objectif actuel est de trouver une alternance dans le domaine du développement d'applications ou
+                    web. Cette opportunité me permettra non seulement d'approfondir mes compétences techniques, mais
+                    aussi de m'épanouir pleinement dans des domaines qui me passionnent véritablement. Je suis convaincu
+                    que cette expérience professionnelle sera le tremplin idéal pour concrétiser mes aspirations dans le
+                    domaine de l'informatique.
+                </p>
+                <h3 className='subhead-text'>Futur </h3>
                 <p>
                     Je souhaite poursuivre des études d'ingénierie pour devenir ingénieur logiciel. Mon objectif est de
                     maîtriser les compétences nécessaires pour concevoir des solutions informatiques innovantes et

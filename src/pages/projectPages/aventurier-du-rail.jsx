@@ -1,38 +1,55 @@
 import React from 'react';
-import infoAC from '../../assets/infoAC.pdf';
+import start from '../../assets/railihm/start.png';
+import game from '../../assets/railihm/game.png';
+import end from '../../assets/railihm/end.png';
+import selection from '../../assets/railihm/selection.png';
 import {BlockCompetence} from "../../components/components.js";
+import infoAC from '../../assets/infoAC.pdf';
 
-const EscapeGame = () => {
+const AventuriersDuRail = () => {
+    const imagesContext = [start, selection, game, end];
     const competences = [
         {
             AC: "11.01",
             ACtxt: "Implémenter des conceptions simples.",
             lvl: "Acquis",
-            Ex: "Intégration des différentes fonctions dans le site suite à l’élaboration."
+            Ex: "Intégration du système de recherche dijkstra pour afficher le chemin le plus court pour terminer la route aux joueurs."
         },
         {
             AC: "11.02",
             ACtxt: "Implémenter des conceptions complexes.",
             lvl: "Acquis",
-            Ex: "Élaboration de la structure du site, des composants et des fonctions."
+            Ex: "Intégration du système de recherche dijkstra pour afficher le chemin le plus court pour terminer la route aux joueurs."
         },
         {
             AC: "11.03",
             ACtxt: "Faire des essais et évaluer leurs résultats en regard des spécifications.",
             lvl: "Acquis",
-            Ex: "Développer et tester des parties fonctionnel du site web en fonction des besoin du client."
+            Ex: "Rajouter des tests unitaires à ceux des professeurs et observer les résultats."
         },
         {
             AC: "11.04",
             ACtxt: "Développer des interfaces utilisateurs.",
             lvl: "Acquis",
-            Ex: "Réalisations d’une interface web pour le site du client sur ces besoins vis à vis de ces besoins."
+            Ex: "Réalisation de menu de démarrage, de paramétrage et du jeu pour une interaction optimale entre le joueur et la machine."
         },
         {
             AC: "12.01",
             ACtxt: "Analyser un problème avec méthode.",
             lvl: "Acquis",
-            Ex: "Analyse des besoins du client avec méthodes pour pouvoir avoir une idée claire de la structure de données la plus efficace pour optimiser le chargement des différentes données intégrées dans le site."
+            Ex: "Découpage du code en plusieurs sous fonctions pour faciliter la compréhension du code."
+        },
+        {
+            AC: "12.03",
+            ACtxt: "Formaliser et mettre en œuvre des outils mathématiques pour l’informatique.",
+            lvl: "Acquis",
+            Ex: "Utilisation de graphe et de formules mathématiques pour les routes et les calculs de points."
+        },
+        {
+            AC: "16.03",
+            ACtxt: "Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire.",
+            lvl: "Acquis",
+            Ex: "Réalisation de réunions visant à répartir les tâches dans le groupe de 2 sur le projet pour optimiser l’avancement du projet dans le temps."
         }
     ];
 
@@ -43,10 +60,11 @@ const EscapeGame = () => {
             <div className="pb-5">
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        site web "La Grotte Obscure"
+                        Aventuriers du Rail World Tour
                     </span>
                 </h1>
-                <p><strong>Septembre 2022</strong></p>
+                <p><strong>Février 2023 à Avril 2023</strong></p>
+                <p><strong>Associé à IUT MONTPELLIER-SETE</strong></p>
             </div>
 
             <div className="pb-5">
@@ -56,9 +74,10 @@ const EscapeGame = () => {
                     </span>
                 </h2>
                 <p>
-                    L'équipe a pris en charge la conception d'un site web pour l'Escape Game "La Grotte Obscure" à la
-                    demande de clients, des élèves d'une autre classe. Notre mission consistait à concrétiser leur
-                    vision et leurs idées en un site interactif reflétant l'atmosphère unique de leur escape game.
+                    Le projet "Aventuriers du Rail Autour du Monde" s'inscrit dans le cadre du développement d'une
+                    implémentation en Java du jeu de plateau éponyme. Se concentrant sur le plateau "Monde", le projet a
+                    été réalisé en plusieurs phases, mettant en œuvre les principes du développement orienté objets et
+                    les algorithmes de graphes.
                 </p>
             </div>
 
@@ -69,24 +88,36 @@ const EscapeGame = () => {
                     </span>
                 </h2>
                 <ul className="list-disc pl-8">
-                    <li>Conception et structure en HTML</li>
-                    <li>Stylisation et mise en page avec CSS</li>
-                    <li>Travail collaboratif en équipe</li>
-                    <li>Compréhension des besoins du client</li>
+                    <li>Développement orienté objets</li>
+                    <li>Tests unitaires</li>
+                    <li>Gestion de version avec Git</li>
+                    <li>Algorithmes de graphes pour la stratégie de jeu</li>
+                    <li>Création d'interfaces homme-machine</li>
                 </ul>
             </div>
 
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Contributeurs
+                        Contributeur
                     </span>
                 </h2>
-                <ul className="list-disc pl-8">
-                    <li>Daniil Hirchyts - Étudiant(e) à IUT MONTPELLIER-SETE</li>
-                    <li>Julien Costa castro - Étudiant(e) à IUT MONTPELLIER-SETE️</li>
-                </ul>
+                <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
             </div>
+
+            <div>
+                <h2 className="subhead-text pb-4">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Galerie
+                    </span>
+                </h2>
+            </div>
+            {imagesContext.map((image, index) => (
+                <div className="pb-5" key={index}>
+                    <img src={image} alt="railihm" className="w-full h-full object-contain"/>
+                </div>
+            ))}
+
             <div>
                 <h2 className="subhead-text pb-4">
                     <span className="drop-shadow font-semibold">
@@ -116,4 +147,4 @@ const EscapeGame = () => {
     );
 };
 
-export default EscapeGame;
+export default AventuriersDuRail;

@@ -152,16 +152,9 @@ export const projects = [
     {
         iconUrl: train,
         theme: 'btn-back-yellow',
-        name: 'Aventurier du rail IHM',
+        name: 'Aventurier du rail',
         description: 'Jeu en JavaFX pour un IHM de l\'aventurier du rail version Graphe',
-        link: '/project/aventurier-du-rail-ihm',
-    },
-    {
-        iconUrl: train,
-        theme: 'btn-back-red',
-        name: 'Aventurier du Graphe',
-        description: 'développement technique des technologies de l\'aventurier du rail',
-        link: '/project/aventurier-du-rail-graphe',
+        link: '/project/aventurier-du-rail',
     },
     {
         iconUrl: game,
@@ -201,7 +194,7 @@ export const projects = [
     {
         iconUrl: controverse,
         theme: 'btn-back-black',
-        name: 'Controversee',
+        name: 'Controverse',
         description: 'Site web sur la controverse de notre groupe sur la question : Le numérique favorise-t-il la participation démocratique ?',
         link: '/project/controverse',
     },

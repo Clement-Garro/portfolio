@@ -180,6 +180,16 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #189fa7, 1vmin 0.65vmin #189fa7;
 }
 
+.neo-brutalism-gray {
+    background: #cccccc; /* Gris clair */
+    position: relative;
+    border-radius: 10px;
+    border: #cccccc; /* Gris clair */
+    box-shadow: 0.6vmin 0.6vmin #aaaaaa, 1vmin 1vmin #bbbbbb, 1vmin 1vmin #bbbbbb,
+    0.65vmin 1vmin #bbbbbb, 1vmin 0.65vmin #bbbbbb; /* Différentes nuances de gris */
+}
+
+
 
 .neo-brutalism-white {
     background: #fff;

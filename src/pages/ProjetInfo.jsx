@@ -21,6 +21,7 @@ const ProjetInfo = () => {
     }, [fileName]);
 
     console.log(fileName)
+    console.log(JsxComponent)
     return (
         <section className={`w-full h-screen ${JsxComponent ?  'pt-28' : ''} overflow-y-scroll relative bg-[linear-gradient(#138086,#534666)]`}>
             <div

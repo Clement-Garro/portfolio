@@ -1,4 +1,4 @@
-import infoAC from "../../assets/InfoAC.pdf";
+import infoAC from "../../assets/infoAC.pdf";
 import {BlockCompetence} from "../../components/components.js";
 import React from "react";
 

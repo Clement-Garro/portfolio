@@ -1,5 +1,6 @@
 import React from 'react';
-import infoAC from '../../assets/infoAC.pdf';
+import infoAC from "../../assets/InfoAC.pdf";
+
 import {BlockCompetence} from "../../components/components.js";
 
 const EscapeGame = () => {

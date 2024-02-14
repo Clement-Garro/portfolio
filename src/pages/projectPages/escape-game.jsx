@@ -87,6 +87,7 @@ const EscapeGame = () => {
                     <li>Julien Costa castro - Étudiant(e) à IUT MONTPELLIER-SETE️</li>
                 </ul>
             </div>
+
             <div>
                 <h2 className="subhead-text pb-4">
                     <span className="drop-shadow font-semibold">

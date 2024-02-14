@@ -10,7 +10,7 @@ import {
     pricewise,
     react,
     tailwindcss, train,
-    twitter, vite, gradhire,
+    twitter, vite, gradhire, C, Cplusplus
 } from "../assets/icons";
 
 export const skills = [
@@ -52,12 +52,12 @@ export const skills = [
     {
         imageUrl: java,
         name: "Java",
-        type: "Frontend",
+        type: "FullStack",
     },
     {
         imageUrl: vite,
         name: "Vite",
-        type: "Frontend",
+        type: "Framework",
     },
     {
         imageUrl: postgreSQL,
@@ -69,150 +69,51 @@ export const skills = [
         name: "MySQL",
         type: "Backend",
     },
+    {
+        imageUrl: C,
+        name: "C",
+        type: "Backend",
+    },
+    {
+        imageUrl: Cplusplus,
+        name: "C++",
+        type: "Backend",
+    },
 ];
 
 export const experiences = [
     {
-        title: "Portolio",
+        title: "IUT Montpellier-Sète",
         icon: portfolio,
         iconBg: "#8e8e8e",
-        date: "Decembre 2023 - Janvier 2024",
+        date: "Septembre 2023 - aujourd'hui",
         points: [
-            "Vite+React",
-            "Three.js",
-            "Tailwind CSS",
-            "Manipulation de modèles 3D",
+            "Montpellier, France",
+            "BUT Informatique sur 3 années",
+            "Travail d'équipe",
+            "Java",
+            "HTML/CSS",
+            "Qualité de développement",
+            "Gestion des besoins du client",
+            "Base de données",
+            "Gestion de projet",
+            "Traitement de données",
         ],
     },
     {
-        title: "GradHire",
-        company_name: "GradHire",
+        title: "Lycee Thomas Edison",
         icon: gradhire,
         iconBg: "#8e8e8e",
-        date: "Septembre 2023 - Janvier 2024",
+        date: "Septembre 2020 - Juin 2023",
         points: [
-            "Aide aux étudiants en informatique de Montpellier",
-            "Travail d'équipe",
-            "PHP",
-            "PostgreSQL",
+            "Arduinos",
+            "Base de données",
             "HTML/CSS",
-            "Gestion des besoins du client",
-        ],
-    },
-    {
-        title: "Aventurier du rail",
-        icon: train,
-        iconBg: "#8e8e8e",
-        date: "Février 2023 - Avril 2023",
-        points: [
-            "Jeu vidéo",
-            "JavaFX",
-            "Travail d'équipe",
-            "Algorithme de Dijkstra",
-        ],
-    },
-    {
-        title: "Fate of the same",
-        icon: game,
-        iconBg: "#8e8e8e",
-        date: "Janvier 2023",
-        points: [
-            "Jeu vidéo",
-            "Unity",
-            "2D pixel art Game",
-            "Travail d'équipe",
-            "Gestion du temps de travail",
-            "Événnement sur 48h",
-        ],
-    },
-    {
-        title: "Nuit de L\'info 2022",
-        icon: moon,
-        iconBg: "#668ac0",
-        date: "Décembre 2022",
-        points: [
-            "Site web de prévention sur les MST",
-            "Travail d'équipe",
-            "Evénement sur 24h",
-            "HTML/CSS",
-            "JS",
-            "Tailwind CSS",
-        ],
-    },
-    {
-        title: "Nuit de L\'info 2023",
-        icon: moon,
-        iconBg: "#668ac0",
-        date: "Décembre 2023",
-        points: [
-            "Site web de prévention sur le climat",
-            "Travail d'équipe",
-            "Evénement sur 24h",
-            "TypeScript",
-            "React",
-            "Tailwind CSS",
-            "IA",
-            "Data Map",
-            "Mini serious game",
-        ],
-    },
-    {
-        title: "Bot Vinted pour Discord",
-        icon: bot,
-        iconBg: "#8e8e8e",
-        date: "Février 2023",
-        points: [
-            "Automatisation de la recherche de vêtements",
-            "Algorithmes de recherche",
-            "Python",
-            "Algorithmes de tri",
-            "Bot Discord",
-        ],
-    },
-    {
-        title: "Site web Escape Game",
-        icon: escape_game,
-        iconBg: "#6177c8",
-        date: "Septembre 2022",
-        points: [
-            "Site web pour un escape game",
-            "Gestion besoin client",
-            "HTML/CSS",
-            "PHP",
-            "Travail d'équipe",
-        ],
-    },
-    {
-        title: "Site web Controverse",
-        icon: controverse,
-        iconBg: "#a9a9a9",
-        date: "Septembre 2022",
-        points: [
-            "Site web sur notre controverse",
             "Traitement de données",
-            "Travail d'équipe",
-            "HTML/CSS",
-            "PHP",
-            "Analyse d'information",
+            "Bac STI2D",
+            "Mention Bien",
         ],
     },
-    {
-        title: "Bot de trading",
-        icon: bot,
-        iconBg: "#8e8e8e",
-        date: "mars 2022",
-        points: [
-            "Automatisation de trading en crypto",
-            "Python",
-            "Algorithmes de trading Bull/Bear",
-            "RSI",
-            "MACD",
-            "EMA",
-            "Bot Discord",
-        ],
-    },
-
-
 ];
 
 export const socialLinks = [
@@ -252,7 +153,7 @@ export const projects = [
         iconUrl: train,
         theme: 'btn-back-yellow',
         name: 'Aventurier du rail',
-        description: 'Jeu en JavaFX',
+        description: 'Jeu en JavaFX pour un IHM de l\'aventurier du rail version Graphe',
         link: '/project/aventurier-du-rail',
     },
     {
@@ -261,6 +162,13 @@ export const projects = [
         name: 'Fate of the same',
         description: 'Jeu vidéo conçu lors de la 7ᵉ édition du Code Game Jam 2023 à l\'IUT de Montpellier-Sète.',
         link: '/project/fate-of-the-same',
+    },
+    {
+        iconUrl: game,
+        theme: 'btn-back-pink',
+        name: 'shadow of memory',
+        description: 'Jeu vidéo conçu lors de la 8ᵉ édition du Code Game Jam 2024 à l\'IUT de Montpellier-Sète.',
+        link: '/project/shadow-of-memory',
     },
     {
         iconUrl: moon,
@@ -286,7 +194,7 @@ export const projects = [
     {
         iconUrl: controverse,
         theme: 'btn-back-black',
-        name: 'Controversee',
+        name: 'Controverse',
         description: 'Site web sur la controverse de notre groupe sur la question : Le numérique favorise-t-il la participation démocratique ?',
         link: '/project/controverse',
     },

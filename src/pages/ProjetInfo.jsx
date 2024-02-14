@@ -1,7 +1,6 @@
 import InCreation from "./InCreation.jsx";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import background from "../assets/gif/ShaderGradient.gif";
 
 const ProjetInfo = () => {
     const params = useParams();
@@ -22,13 +21,15 @@ const ProjetInfo = () => {
     }, [fileName]);
 
     console.log(fileName)
+    console.log(JsxComponent)
     return (
-        <section className="w-full h-screen overflow-y-scroll relative" style={{
-            backgroundImage: `url(${background})`,
-            backgroundSize: 'cover',
-        }}>
-            <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-                {error || !JsxComponent ? <InCreation /> : <JsxComponent />}
+        <section className={`w-full h-screen ${JsxComponent ?  'pt-28' : ''} overflow-y-scroll relative bg-[linear-gradient(#138086,#534666)]`}>
+            <div
+                className={`flex ${
+                    JsxComponent ? 'top-28' : 'h-screen'
+                } left-0 right-0 z-10 flex items-center justify-center`}
+            >
+                {error || !JsxComponent ? <InCreation/> : <JsxComponent/>}
             </div>
         </section>
     );

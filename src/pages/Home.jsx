@@ -1,7 +1,7 @@
 import Loader from "../components/Loader.jsx";
 import React, {Suspense, useState, useEffect, useRef} from "react";
 import {Canvas} from "@react-three/fiber";
-import { Map, Sky, Bird, Dragon} from "../models";
+import {Map, Sky, Bird, Dragon} from "../models";
 import HomeInfo from "../components/HomeInfo.jsx";
 
 import music from "../assets/music.mp3"
@@ -15,26 +15,31 @@ const Home = () => {
     const [isRotating, setIsRotating] = useState(false)
     const [currentStage, setCurrentStage] = useState(1)
     const [isPlayingMusic, setIsPlayingMusic] = useState(true)
+    const [hasUserInteracted, setHasUserInteracted] = useState(false);
 
     useEffect(() => {
-        if (isPlayingMusic) {
-            audioRef.current.play()
+        if (isPlayingMusic && hasUserInteracted) {
+            audioRef.current.play();
         }
 
         return () => {
-            audioRef.current.pause()
-        }
-    }, [isPlayingMusic]);
+            audioRef.current.pause();
+        };
+    }, [isPlayingMusic, hasUserInteracted]);
+
+    const handleAudioButtonClick = () => {
+        setIsPlayingMusic(!isPlayingMusic);
+        setHasUserInteracted(true);
+    };
 
     const adjustIslandForScreenSize = () => {
         let screenScale = null;
         let screenPosition = [0, -8, -16];
-        let rotation = [0,29.8,0]
+        let rotation = [0, 29.8, 0]
 
         if (window.innerWidth < 768) {
             screenScale = [0.9, 0.9, 0.9]
-        }
-        else {
+        } else {
             screenScale = [1, 1, 1]
         }
 
@@ -46,8 +51,7 @@ const Home = () => {
         if (window.innerWidth < 768) {
             screenScale = [60, 60, 60]
             screenPosition = [0, -3.5, 0]
-        }
-        else {
+        } else {
             screenScale = [140, 140, 140]
             screenPosition = [0, -7, -3]
         }
@@ -82,7 +86,6 @@ const Home = () => {
                         groundColor={"#000000"}
                         intensity={2.5}
                     />
-
                     <Bird
                         position={[21, 8, -10]}
                         rotation={[0, 0, 0]}
@@ -108,10 +111,19 @@ const Home = () => {
             </Canvas>
 
             <div className="absolute bottom-2 left-2">
-                <img src={!isPlayingMusic ? soundoff : soundon}  alt={'soundon'} className="w-10 h-10 cursor-pointer object-contain" onClick={() => setIsPlayingMusic(!isPlayingMusic)} />
+                <button
+                    onClick={handleAudioButtonClick}
+                    className="focus:outline-none"
+                >
+                    <img
+                        src={!isPlayingMusic ? soundoff : soundon}
+                        alt={"soundon"}
+                        className="w-10 h-10 cursor-pointer object-contain"
+                    />
+                </button>
             </div>
         </section>
     )
 }
 
-export default Home
+export default Home;

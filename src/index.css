@@ -56,7 +56,7 @@ body:has(.card[data-color="green"]:hover) {
     }
 
     .header {
-        @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+        @apply flex justify-between items-center sm:px-16 px-8 py-4 absolute max-w-5xl mx-auto top-0 bg-transparent z-10 right-0 left-0 backdrop-blur-sm rounded-3xl;
     }
 
     .footer {
@@ -179,6 +179,16 @@ body:has(.card[data-color="green"]:hover) {
     box-shadow: 0.6vmin 0.6vmin #10696f, 1vmin 1vmin #189fa7, 1vmin 1vmin #189fa7,
     0.65vmin 1vmin #189fa7, 1vmin 0.65vmin #189fa7;
 }
+
+.neo-brutalism-gray {
+    background: #cccccc; /* Gris clair */
+    position: relative;
+    border-radius: 10px;
+    border: #cccccc; /* Gris clair */
+    box-shadow: 0.6vmin 0.6vmin #aaaaaa, 1vmin 1vmin #bbbbbb, 1vmin 1vmin #bbbbbb,
+    0.65vmin 1vmin #bbbbbb, 1vmin 0.65vmin #bbbbbb; /* Différentes nuances de gris */
+}
+
 
 
 .neo-brutalism-white {

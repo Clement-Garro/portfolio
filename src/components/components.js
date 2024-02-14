@@ -11,5 +11,5 @@ import Island from "./Island/Island.jsx";
 import RedTree from "./Island/RedTree.jsx";
 import BlueTree from "./Island/BlueTree.jsx";
 import RedHouse from "./Island/RedHouse.jsx";
-
-export { Alert, Loader, HomeInfo, CTA, Footer, GreenTree, PinkHouse, YellowTree, BlueHouse, Island, RedTree, BlueTree, RedHouse };
+import BlockCompetence from "./BlockCompetence.jsx";
+export { Alert, Loader, HomeInfo, CTA, Footer, GreenTree, PinkHouse, YellowTree, BlueHouse, Island, RedTree, BlueTree, RedHouse, BlockCompetence };

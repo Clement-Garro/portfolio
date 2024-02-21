@@ -5,37 +5,61 @@ import React from "react";
 const controverse = () => {
     const competences = [
         {
-            AC: "11.01",
+            AC: "CE 1.01",
+            ACtxt: "Respecter les besoins décrits par le client",
+            lvl: "Maîtrisé",
+            Ex: "Intégration du contenu textuel conforme aux directives et aux attentes du client pour la plateforme de la controverse."
+        },
+        {
+            AC: "CE 1.03",
+            ACtxt: "Veiller à la qualité du code et à sa documentation",
+            lvl: "Maîtrisé",
+            Ex: "Documentation détaillée du code source pour assurer sa compréhension et sa maintenance à long terme."
+        },
+        {
+            AC: "CE 5.01",
+            ACtxt: "Communiquer efficacement avec les différents acteurs d'un projet",
+            lvl: "Maîtrisé",
+            Ex: "Participation à des réunions avec les parties prenantes pour discuter des exigences et des avancées du projet."
+        },
+        {
+            AC: "CE 6.02",
+            ACtxt: "Développer une communication efficace et collaborative",
+            lvl: "Maîtrisé",
+            Ex: "Mise en place de canaux de communication efficaces, tels que des réunions régulières et des outils de collaboration en ligne, pour favoriser le travail d'équipe et la coordination des tâches."
+        },
+        {
+            AC: "AC 11.01",
             ACtxt: "Implémenter des conceptions simples.",
             lvl: "Acquis",
             Ex: "Intégration des différentes parties des textes développé dans la controverse dans les parties du site élaboré pour."
         },
         {
-            AC: "11.02",
+            AC: "AC 11.02",
             ACtxt: "Élaborer des conceptions simples.",
             lvl: "Acquis",
             Ex: "Élaboration de la structure du site pour pouvoir intégrer le texte écrit dans la controverse."
         },
         {
-            AC: "11.03",
+            AC: "AC 11.03",
             ACtxt: "Faire des essais et évaluer leurs résultats en regard des spécifications.",
             lvl: "Acquis",
             Ex: "développer et tester le responsive pour vérifier que le texte de la controverse soit toujours bien lisible pour les version mobile et desktop."
         },
         {
-            AC: "11.04",
+            AC: "AC 11.04",
             ACtxt: "Développer des interfaces utilisateurs.",
             lvl: "Acquis",
             Ex: "Réalisation d’une interface web pour le site de la controverse sur ces besoins vis à vis de ces besoins."
         },
         {
-            AC: "11.04",
+            AC: "AC 11.04",
             ACtxt: "Développer des interfaces utilisateurs.",
             lvl: "Acquis",
             Ex: "Réalisations de l’interface web homme machine pour une navigation et une interaction simplifiée pour le site de la controverse."
         },
         {
-            AC: "16.04",
+            AC: "AC 16.04",
             ACtxt: "Acquérir les compétences interpersonnelles pour travailler en équipe.",
             lvl: "Acquis",
             Ex: "J’ai participé à des activités de groupe et j'ai cherché à collaborer avec mes collègues sur différents projets. En écoutant les autres et en partageant mes propres idées."

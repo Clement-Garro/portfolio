@@ -6,31 +6,55 @@ import {BlockCompetence} from "../../components/components.js";
 const EscapeGame = () => {
     const competences = [
         {
-            AC: "11.01",
+            AC: "CE 1.01",
+            ACtxt: "Respecter les besoins décrits par le client",
+            lvl: "Maîtrisé",
+            Ex: "Intégration des mécanismes de jeu conformes aux scénarios d'escape game définis par le client."
+        },
+        {
+            AC: "CE 1.02",
+            ACtxt: "Appliquer des principes algorithmiques",
+            lvl: "Maîtrisé",
+            Ex: "Mise en place d'algorithmes de résolution d'énigmes et de puzzles pour offrir une expérience de jeu stimulante."
+        },
+        {
+            AC: "CE 1.03",
+            ACtxt: "Veiller à la qualité du code et à sa documentation",
+            lvl: "Maîtrisé",
+            Ex: "Documentation exhaustive du code source pour assurer sa compréhension et sa maintenabilité par l'équipe de développement."
+        },
+        {
+            AC: "CE 2.01",
+            ACtxt: "Sélectionner les ressources techniques appropriées",
+            lvl: "Compris",
+            Ex: "Choix des technologies de développement et des plateformes de déploiement en fonction des contraintes et des exigences du projet."
+        },
+        {
+            AC: "AC 11.01",
             ACtxt: "Implémenter des conceptions simples.",
             lvl: "Acquis",
             Ex: "Intégration des différentes fonctions dans le site suite à l’élaboration."
         },
         {
-            AC: "11.02",
+            AC: "AC 11.02",
             ACtxt: "Implémenter des conceptions complexes.",
             lvl: "Acquis",
             Ex: "Élaboration de la structure du site, des composants et des fonctions."
         },
         {
-            AC: "11.03",
+            AC: "AC 11.03",
             ACtxt: "Faire des essais et évaluer leurs résultats en regard des spécifications.",
             lvl: "Acquis",
             Ex: "Développer et tester des parties fonctionnel du site web en fonction des besoin du client."
         },
         {
-            AC: "11.04",
+            AC: "AC 11.04",
             ACtxt: "Développer des interfaces utilisateurs.",
             lvl: "Acquis",
             Ex: "Réalisations d’une interface web pour le site du client sur ces besoins vis à vis de ces besoins."
         },
         {
-            AC: "12.01",
+            AC: "AC 12.01",
             ACtxt: "Analyser un problème avec méthode.",
             lvl: "Acquis",
             Ex: "Analyse des besoins du client avec méthodes pour pouvoir avoir une idée claire de la structure de données la plus efficace pour optimiser le chargement des différentes données intégrées dans le site."

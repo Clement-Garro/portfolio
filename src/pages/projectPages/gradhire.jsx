@@ -8,49 +8,133 @@ const Gradhire = () => {
     const imagesContext = [acceuil, dashboard, offres];
     const competences = [
         {
-            AC: "21.01",
+            AC: "CE 1.01",
+            ACtxt: "Respecter les besoins décrits par le client",
+            lvl: "Maîtrisé",
+            Ex: "Consignes du projet à respecter, avec des attentes des professeurs."
+        },
+        {
+            AC: "CE 1.02",
+            ACtxt: "Appliquer des principes algorithmiques",
+            lvl: "Maîtrisé",
+            Ex: "Utilisation d’index dans la Base de donnée pour optimiser le temps des requêtes"
+        },
+        {
+            AC: "CE 1.03",
+            ACtxt: "Veiller à la qualité du code et à sa documentation",
+            lvl: "Maîtrisé",
+            Ex: "Factorisation du code en respectant des principes de développement comme SOLID, mais aussi une documentation de 79 pages sur l’utilisation de notre site"
+        },
+        {
+            AC: "CE 1.04",
+            ACtxt: "Choisir les ressources techniques appropriées",
+            lvl: "Compris",
+            Ex: "Changement de langage de la BDD, création de petit framework interne."
+        },
+        {
+            AC: "CE 2.04",
+            ACtxt: "Formaliser et modéliser des situations complexes",
+            lvl: "Maîtrisé",
+            Ex: "Création d’un système de filtre dynamique en php"
+        },
+        {
+            AC: "CE 2.02",
+            ACtxt: "recenser les algorithmes et les structures de données usuels",
+            lvl: "Maîtrisé",
+            Ex: "optimiser les algorithmes de l'application déjà existante."
+        },
+        {
+            AC: "CE 2.03",
+            ACtxt: "S’appuyer sur des schémas de raisonnement",
+            lvl: "Maîtrisé",
+            Ex: "S’appuyer sur des User story, des Use cases et Diagramme de classe."
+        },
+        {
+            AC: "CE 2.04",
+            ACtxt: "Justifier les choix et validant les résultats",
+            lvl: "Compris",
+            Ex: "Réalisation de test pour valider le meilleur choix d’optimisation du site"
+        },
+        {
+            AC: "CE 3.01",
+            ACtxt: "Sécuriser le système d'information",
+            lvl: "Compris",
+            Ex: "utilisation de requête préparée et de d'encodage url pour éviter les injections SQL et les faille XSS"
+        },
+        {
+            AC: "CE 4.01",
+            ACtxt: "Respecter les réglementations sur le respect de la vie privée et la protection des données personnelles",
+            lvl: "Maîtrisé",
+            Ex: "Réalisation d’un système de connexion et de compte avec chiffrement pour sécuriser les données personnelles des utilisateurs."
+        },
+        {
+            AC: "CE 4.02",
+            ACtxt: "Respecter les enjeux économiques, sociétaux et écologiques de l'utilisation du stockage de données, ainsi que les différentes infrastructures",
+            lvl: "Compris",
+            Ex: "Réalisation d’une base de données respectant au maximum l’environnement"
+        },
+        {
+            AC: "CE 5.01",
+            ACtxt: "Communiquer efficacement avec les différents acteurs d'un projet",
+            lvl: "Maîtrisé",
+            Ex: "Réunion avec le Scrum master et le Product Owner"
+        },
+        {
+            AC: "CE 5.04",
+            ACtxt: "Adopter une démarche proactive, créative et critique",
+            lvl: "Compris",
+            Ex: "Proposé des idées créative et participation au choix des idées que l’on garde pour le développement du sie avec un esprit critique"
+        },
+        {
+            AC: "CE 6.04",
+            ACtxt: "développer une communication efficace et collaborative",
+            lvl: "Maîtrisé",
+            Ex: "mise en place d'un Discord et de daily meeting avec toute l’équipe du projet"
+        },
+        {
+            AC: "AC 21.01",
             ACtxt: "Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences.",
             lvl: "Acquis",
             Ex: "Élaboration des User Story, des Personas et des différents diagrammes pour faciliter l’intégration des différents concepts élaborés lors des rétrospective."
         },
         {
-            AC: "21.02",
+            AC: "AC 21.02",
             ACtxt: "Appliquer des principes d’accessibilité et d’ergonomie.",
             lvl: "Acquis",
             Ex: "Développement d’une interface homme machine ergonomie, responsive et intuitive pour faciliter le déplacement et les intéractions de l’utilisateur."
         },
         {
-            AC: "21.03",
+            AC: "AC 21.03",
             ACtxt: "Adopter de bonnes pratiques de conception et de programmation.",
             lvl: "Acquis",
             Ex: "Réalisation du site sur une base MVC et développement des différentes parties du site en respectant les principes SOLID."
         },
         {
-            AC: "21.04",
+            AC: "AC 21.04",
             ACtxt: "Vérifier et valider la qualité de l’application par les tests.",
             lvl: "Acquis",
             Ex: "Avant chaque rendez-vous entre le client et l'équipe de développement, une batterie de tests était appliquée pour trouver et corriger les différents bugs rencontrés."
         },
         {
-            AC: "22.01",
+            AC: "AC 22.01",
             ACtxt: "Concevoir et développer des applications communicantes.",
             lvl: "Compris",
             Ex: "Réalisation d’une api et d’un mini framework pour faciliter l’utilisation de composants dans le site comme la classe components Détail qui permet de générer les pages détail en fonction des paramètres donnés."
         },
         {
-            AC: "22.03 ",
+            AC: "AC 22.03 ",
             ACtxt: "Sécuriser les services et données d’un système.",
             lvl: "Acquis",
             Ex: "Utilisation de technique de développement pour éviter l' intrusion par brute force mais aussi les injections XSS et sql au sain de notre site internet. Système de login dans le site."
         },
         {
-            AC: "26.02",
+            AC: "AC 26.02",
             ACtxt: "Appliquer une démarche pour intégrer une équipe informatique au sein d’une organisation.",
             lvl: "Compris",
             Ex: "Lorsque j'ai intégré une nouvelle équipe de développement, bien que je connaissais déjà les membres de l'équipe, j'ai rapidement assimilé les processus et les pratiques en place. J'ai participé activement aux réunions et aux discussions techniques, offrant mes idées et compétences là où cela était approprié."
         },
         {
-            AC: "26.03",
+            AC: "AC 26.03",
             ACtxt: "Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique.",
             lvl: "Compris",
             Ex: "Afin de faciliter l'intégration au sein de l'équipe, nous avons pris l'initiative d'identifier les compétences de chaque membre. Pour ce faire, nous avons organisé des réunions et des sorties en dehors du cadre professionnel afin de mieux nous connaître. Ces échanges nous ont permis de partager nos connaissances et expériences, renforçant ainsi nos relations de travail."

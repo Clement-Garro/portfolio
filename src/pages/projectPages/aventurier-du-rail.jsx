@@ -10,43 +10,79 @@ const AventuriersDuRail = () => {
     const imagesContext = [start, selection, game, end];
     const competences = [
         {
-            AC: "11.01",
+            AC: "CE 1.01",
+            ACtxt: "Respecter les besoins décrits par le client",
+            lvl: "Maîtrisé",
+            Ex: "Intégration du système de recherche Dijkstra pour afficher le chemin le plus court pour terminer la route aux joueurs."
+        },
+        {
+            AC: "CE 1.02",
+            ACtxt: "Appliquer des principes algorithmiques",
+            lvl: "Maîtrisé",
+            Ex: "Développement de mécanismes de jeu basés sur des algorithmes pour assurer une expérience de jeu fluide."
+        },
+        {
+            AC: "CE 1.03",
+            ACtxt: "Veiller à la qualité du code et à sa documentation",
+            lvl: "Maîtrisé",
+            Ex: "Documentation détaillée des algorithmes et des fonctionnalités du jeu pour faciliter la maintenance et l'évolution du projet."
+        },
+        {
+            AC: "CE 2.01",
+            ACtxt: "Sélectionner les ressources techniques appropriées",
+            lvl: "Compris",
+            Ex: "Choix des langages de programmation et des outils de développement adaptés aux besoins spécifiques du jeu."
+        },
+        {
+            AC: "CE 2.02",
+            ACtxt: "Formaliser et modéliser des situations complexes",
+            lvl: "Maîtrisé",
+            Ex: "Modélisation des routes et des interactions entre les différents éléments du jeu pour créer une expérience réaliste et immersive."
+        },
+        {
+            AC: "AC 11.01",
             ACtxt: "Implémenter des conceptions simples.",
             lvl: "Acquis",
             Ex: "Intégration du système de recherche dijkstra pour afficher le chemin le plus court pour terminer la route aux joueurs."
         },
         {
-            AC: "11.02",
+            AC: "AC 11.01",
+            ACtxt: "Implémenter des conceptions simples.",
+            lvl: "Acquis",
+            Ex: "Intégration du système de recherche dijkstra pour afficher le chemin le plus court pour terminer la route aux joueurs."
+        },
+        {
+            AC: "AC 11.02",
             ACtxt: "Implémenter des conceptions complexes.",
             lvl: "Acquis",
             Ex: "Intégration du système de recherche dijkstra pour afficher le chemin le plus court pour terminer la route aux joueurs."
         },
         {
-            AC: "11.03",
+            AC: "AC 11.03",
             ACtxt: "Faire des essais et évaluer leurs résultats en regard des spécifications.",
             lvl: "Acquis",
             Ex: "Rajouter des tests unitaires à ceux des professeurs et observer les résultats."
         },
         {
-            AC: "11.04",
+            AC: "AC 11.04",
             ACtxt: "Développer des interfaces utilisateurs.",
             lvl: "Acquis",
             Ex: "Réalisation de menu de démarrage, de paramétrage et du jeu pour une interaction optimale entre le joueur et la machine."
         },
         {
-            AC: "12.01",
+            AC: "AC 12.01",
             ACtxt: "Analyser un problème avec méthode.",
             lvl: "Acquis",
             Ex: "Découpage du code en plusieurs sous fonctions pour faciliter la compréhension du code."
         },
         {
-            AC: "12.03",
+            AC: "AC 12.03",
             ACtxt: "Formaliser et mettre en œuvre des outils mathématiques pour l’informatique.",
             lvl: "Acquis",
             Ex: "Utilisation de graphe et de formules mathématiques pour les routes et les calculs de points."
         },
         {
-            AC: "16.03",
+            AC: "AC 16.03",
             ACtxt: "Identifier les statuts, les fonctions et les rôles de chaque membre d’une équipe pluridisciplinaire.",
             lvl: "Acquis",
             Ex: "Réalisation de réunions visant à répartir les tâches dans le groupe de 2 sur le projet pour optimiser l’avancement du projet dans le temps."

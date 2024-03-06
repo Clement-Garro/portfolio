@@ -27,8 +27,10 @@ import gradhire from "./gradhire.png"
 import C from "./C.svg"
 import Cplusplus from "./Cplusplus.svg"
 import php from "./php.svg"
+import but from './but.svg'
 
 export {
+    but,
     php,
     css,
     git,

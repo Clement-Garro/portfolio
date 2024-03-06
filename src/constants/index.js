@@ -10,7 +10,7 @@ import {
     pricewise,
     react,
     tailwindcss, train,
-    twitter, vite, gradhire, C, Cplusplus, php
+    twitter, vite, gradhire, C, Cplusplus, php, but
 } from "../assets/icons";
 
 export const skills = [
@@ -89,7 +89,7 @@ export const skills = [
 export const experiences = [
     {
         title: "IUT Montpellier-Sète",
-        icon: portfolio,
+        icon: but,
         iconBg: "#8e8e8e",
         date: "Septembre 2023 - aujourd'hui",
         points: [
@@ -107,7 +107,7 @@ export const experiences = [
     },
     {
         title: "Lycee Thomas Edison",
-        icon: gradhire,
+        icon: portfolio,
         iconBg: "#8e8e8e",
         date: "Septembre 2020 - Juin 2023",
         points: [

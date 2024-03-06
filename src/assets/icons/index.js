@@ -28,8 +28,10 @@ import C from "./C.svg"
 import Cplusplus from "./Cplusplus.svg"
 import php from "./php.svg"
 import but from './but.svg'
+import iconSite from './iconSite.svg'
 
 export {
+    iconSite,
     but,
     php,
     css,

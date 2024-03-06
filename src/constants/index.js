@@ -10,7 +10,7 @@ import {
     pricewise,
     react,
     tailwindcss, train,
-    twitter, vite, gradhire, C, Cplusplus
+    twitter, vite, gradhire, C, Cplusplus, php
 } from "../assets/icons";
 
 export const skills = [
@@ -77,6 +77,11 @@ export const skills = [
     {
         imageUrl: Cplusplus,
         name: "C++",
+        type: "Backend",
+    },
+    {
+        imageUrl: php,
+        name: "PHP",
         type: "Backend",
     },
 ];

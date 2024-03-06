@@ -26,8 +26,10 @@ import soundoff from './soundoff.png'
 import gradhire from "./gradhire.png"
 import C from "./C.png"
 import Cplusplus from "./Cplusplus.png"
+import php from "./php.png"
 
 export {
+    php,
     css,
     git,
     github,

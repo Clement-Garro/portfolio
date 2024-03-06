@@ -24,9 +24,9 @@ import postgreSQL from './postgreSQL.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import gradhire from "./gradhire.png"
-import C from "./C.png"
-import Cplusplus from "./Cplusplus.png"
-import php from "./php.png"
+import C from "./C.svg"
+import Cplusplus from "./Cplusplus.svg"
+import php from "./php.svg"
 
 export {
     php,

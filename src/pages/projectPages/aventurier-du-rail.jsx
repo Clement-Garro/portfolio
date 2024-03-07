@@ -1,8 +1,8 @@
 import React from 'react';
-import start from '../../assets/railihm/start.png';
-import game from '../../assets/railihm/game.png';
-import end from '../../assets/railihm/end.png';
-import selection from '../../assets/railihm/selection.png';
+import start from '../../assets/railihm/start.webp';
+import game from '../../assets/railihm/game.webp';
+import end from '../../assets/railihm/end.webp';
+import selection from '../../assets/railihm/selection.webp';
 import {BlockCompetence} from "../../components/components.js";
 import infoAC from '../../assets/infoAC.pdf';
 

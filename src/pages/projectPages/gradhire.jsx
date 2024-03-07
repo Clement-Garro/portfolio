@@ -1,7 +1,7 @@
 import React from 'react';
-import acceuil from '../../assets/gradhire/acceuil.png';
-import dashboard from '../../assets/gradhire/dashboard.png';
-import offres from '../../assets/gradhire/offres.png';
+import acceuil from '../../assets/gradhire/acceuil.webp';
+import dashboard from '../../assets/gradhire/dashboard.webp';
+import offres from '../../assets/gradhire/offres.webp';
 import infoAC from '../../assets/infoAC.pdf';
 import {BlockCompetence} from "../../components/components.js";
 const Gradhire = () => {

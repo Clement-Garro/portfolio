@@ -1,8 +1,8 @@
 import React from 'react';
-import about from '../../assets/portfolio/about.png';
-import contact from '../../assets/portfolio/contact.png';
-import home from '../../assets/portfolio/home.png';
-import projects from '../../assets/portfolio/projects.png';
+import about from '../../assets/portfolio/about.webp';
+import contact from '../../assets/portfolio/contact.webp';
+import home from '../../assets/portfolio/home.webp';
+import projects from '../../assets/portfolio/projects.webp';
 const Portfolio = () => {
     const imagesContext = [home, about, projects, contact];
     return (

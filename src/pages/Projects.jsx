@@ -1,6 +1,7 @@
 import { CTA } from "../components/components.js";
 import { Link } from "react-router-dom";
 import { projects } from "../constants";
+import Footer from "../components/Footer.jsx";
 
 const Projects = () => {
     return (
@@ -43,6 +44,7 @@ const Projects = () => {
             <hr className='border-slate-200' />
 
             <CTA />
+            <Footer />
         </section>
     );
 };

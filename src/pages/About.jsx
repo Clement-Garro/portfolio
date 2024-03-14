@@ -19,7 +19,7 @@ const About = () => {
                 👋
             </h1>
 
-            <div className='mt-5 flex flex-col gap-4 text-slate-500'>
+            <div className='my-10 flex flex-col gap-4 text-black'>
                 <h3 className='subhead-text'>Qui suis-je ?</h3>
                 <p>
                     Passionné par l'informatique, la culture japonaise, les jeux vidéo et le
@@ -28,38 +28,23 @@ const About = () => {
                     à l'IUT de Montpellier.
                 </p>
                 <h3 className='subhead-text'>Traits de personnalité :</h3>
-                <li>
-                    Énergie : Je suis plutôt introverti, préférant la réflexion et la contemplation à la stimulation
-                    extérieure excessive.
-                </li>
-                <li>
-                    Esprit : Mon penchant intuitif me pousse à rechercher des modèles et des possibilités cachées dans
-                    mon environnement, ce qui alimente ma créativité et mon imagination.
-                </li>
-                <li>
-                    Nature : Je tends à prendre des décisions basées sur la logique et l'objectivité plutôt que sur
-                    les émotions, privilégiant la pensée critique dans mes interactions et mes choix.
-                </li>
-                <li>
-                    Tactique : Mon approche jugementale se manifeste par une préférence pour la planification et la
-                    structure, me permettant d'anticiper les défis futurs et de prendre des décisions éclairées.
-                </li>
-                <li>
-                    Identité : Je suis plus enclin à être confiant et déterminé dans mes actions, faisant preuve
-                    d'assurance dans la poursuite de mes objectifs et de mes aspirations.
-                </li>
+                <p>
+                    Ma <b>rigueur</b>, ma <b>curiosité</b>, ma <b>créativité</b> et ma <b>détermination</b>,
+                    me permettent de mener mes projets avec une approche <b>logique</b> et <b>motivée</b>, tout en restant <b>dynamique</b> et <b>autonome</b>.
+                    Mon <b>bon relationnel</b> et mon bon <b>esprit d'équipe</b> me permettent de collaborer efficacement avec les autres,
+                    et ma <b>persévérance</b> me pousse à atteindre mes objectifs.
+                </p>
                 <h3 className='subhead-text'> Qu’est-ce que j’aime ?</h3>
                 <p>
-                    Mon enthousiasme pour la technologie m'a naturellement conduit à explorer la construction
-                    d'ordinateurs et à maîtriser plusieurs langages de programmation. En parallèle, ma fascination pour
-                    la culture japonaise, les jeux vidéo et le sport enrichit mon quotidien et me permet de cultiver une
-                    curiosité sans cesse renouvelée.
+                    Mon enthousiasme pour la technologie m'a naturellement conduit à explorer la construction d'ordinateurs et à maîtriser plusieurs langages de programmation.
+                    En parallèle, ma fascination pour la culture japonaise, les jeux vidéo et le sport enrichit mon quotidien et me permet de cultiver une curiosité sans cesse renouvelée.
+                    De plus, ma passion pour la cuisine me pousse à expérimenter de nouvelles recettes et à découvrir les saveurs du monde, ajoutant ainsi une dimension créative à ma vie.
                 </p>
 
                 <h3 className='subhead-text'>Quelles sont mes compétences et mes capacités ?</h3>
                 <p>
                     Mes compétences résident dans ma capacité à penser de manière stratégique, à résoudre des problèmes
-                    de manière efficace et à atteindre mes objectifs avec détermination. Je suis à l'aise dans des
+                    de manière efficace et à atteindre mes objectifs avec <b>détermination</b>. Je suis à l'aise dans des
                     domaines tels que le développement d'idées novatrices, l'analyse de données complexes et la
                     planification à long terme. Mon approche méthodique et ma soif de connaissances me permettent
                     d'atteindre des niveaux élevés de réussite dans mes entreprises.

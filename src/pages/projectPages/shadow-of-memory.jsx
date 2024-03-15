@@ -52,12 +52,24 @@ const shadowOfMemory = () => {
                 <p>
                     Shadow of Memory propose un gameplay simple mais captivant, malgré les contraintes de temps de la
                     jam. Les joueurs explorent un monde mystique en 3D, où ils peuvent interagir avec des personnages
-                    non-joueurs et des éléments environnementaux pour avancer dans l'histoire.
-                    Bien que nous n'ayons pas pu intégrer toutes nos idées dans le jeu en 24 heures, nous avons réussi à
-                    mettre en place un système de déplacement fluide et une mécanique de score qui représente le niveau
-                    de légende du personnage principal. En visitant des villages dispersés dans une vaste carte 3D, les
-                    joueurs peuvent hantent certaines maisons et accomplir des actions héroïques pour augmenter leur
-                    score de légende.
+                    non-joueurs et des éléments environnementaux pour avancer dans l'histoire. Bien que nous n'ayons pas
+                    pu intégrer toutes nos idées dans le jeu en 24 heures, nous avons réussi à mettre en place un
+                    système de déplacement fluide et une mécanique de score qui représente le niveau de légende du
+                    personnage principal.
+
+                    En visitant des villages dispersés dans une vaste carte 3D, les joueurs peuvent hanter certaines
+                    maisons et accomplir des actions héroïques pour augmenter leur score de légende. Pour ajouter une
+                    couche de tension et d'excitation, nous avions prévu un système de Quick Time Events (QTE) lors des
+                    phases de hantise des maisons. Si les joueurs réussissent ces QTE, ils gagnent du score de légende,
+                    mais s'ils échouent, ils en perdent. Cette mécanique encourage les joueurs à rester engagés et
+                    attentifs tout en explorant le monde du jeu.
+
+                    De plus, les joueurs peuvent également traverser les murs et les maisons en utilisant un pouvoir
+                    d'intangibilité. En appuyant sur une touche spécifique, ils peuvent activer cette capacité, ce qui
+                    leur permet de passer à travers les obstacles physiques et d'explorer de nouvelles zones autrement
+                    inaccessibles. Cette fonctionnalité ajoute une dimension supplémentaire à l'exploration du monde du
+                    jeu, permettant aux joueurs de découvrir des secrets cachés et de résoudre des énigmes pour
+                    progresser dans l'histoire.
                 </p>
             </div>
             <div className="pb-5">

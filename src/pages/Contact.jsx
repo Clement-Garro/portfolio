@@ -74,7 +74,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='w-full h-screen flex flex-col max-container justify-between'>
+        <section className='w-full lg:h-screen flex flex-col max-container justify-between'>
             <div className='relative flex lg:flex-row flex-col p-0'>
                 {alert.show && <Alert {...alert} />}
 

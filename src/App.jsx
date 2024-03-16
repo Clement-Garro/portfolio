@@ -1,11 +1,8 @@
-import {Route, BrowserRouter as Router, Routes, useLocation} from "react-router-dom";
+import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import { Home, About, Projects, Contact, ProjetInfo } from "./pages";
 import {Toaster} from "react-hot-toast";
-import CTA from "./components/CTA.jsx";
-import Footer from "./components/Footer.jsx";
 import {Analytics} from "@vercel/analytics/react";
-
 const App = () => {
     return (
         <main className="bg-slate-300/20">

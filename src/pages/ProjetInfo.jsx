@@ -16,7 +16,6 @@ const ProjetInfo = () => {
             .catch((error) => {
                 setError(true);
             });
-
         loadComponent.then(r => r);
     }, [fileName]);
 

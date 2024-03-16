@@ -206,7 +206,7 @@ export const projects = [
     {
         iconUrl: bot,
         theme: 'btn-back-gray',
-        name: 'Bot Vinted pour Discord',
+        name: 'Bot Vinted',
         description: 'Bot simple pour envoyer des notifications suite à la mise en vente de nouveaux objets sur vinted',
         link: '/project/bot-vinted',
     },

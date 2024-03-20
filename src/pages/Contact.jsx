@@ -15,8 +15,8 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
     const [currentAnimation, setCurrentAnimation] = useState("idle");
 
-    const handleChange = ({target: {nom, value}}) => {
-        setForm({...form, [nom]: value});
+    const handleChange = ({target: {name, value}}) => {
+        setForm({...form, [name]: value});
     };
 
     const handleFocus = () => setCurrentAnimation("walk");
@@ -92,7 +92,7 @@ const Contact = () => {
                             Prénom ou Nom
                             <input
                                 type='text'
-                                name='name'
+                                name='nom'
                                 className='input'
                                 placeholder='Clément'
                                 required

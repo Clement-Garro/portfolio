@@ -82,7 +82,7 @@ const controverse = () => {
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
-                        À Propos du Projet
+                        Contexte du projet
                     </span>
                 </h2>
                 <div>

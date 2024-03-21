@@ -1,6 +1,11 @@
 import React from 'react';
+import home from "../../assets/ndi2023/Home.webp";
+import chatbot from "../../assets/ndi2023/Chatbot.webp";
+import apropos from "../../assets/ndi2023/Apro.webp";
+import map from "../../assets/ndi2023/Map.webp";
 
 const NuitDeLInfo2023 = () => {
+    const imagesContext = [home, chatbot, apropos, map];
     return (
         <section className="project-info-box">
             <div className="pb-5">
@@ -15,7 +20,7 @@ const NuitDeLInfo2023 = () => {
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Notre Projet
+                        Contexte du projet
                     </span>
                 </h2>
                 <p>
@@ -28,6 +33,25 @@ const NuitDeLInfo2023 = () => {
                     d'innovation pour un impact environnemental positif.
                 </p>
             </div>
+
+            <div className="pb-5">
+                <h1 className="head-text">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Vidéo Mini-jeu
+                    </span>
+                </h1>
+                <div className="pb-5">
+                    <iframe
+                        className="w-full h-96 object-cover rounded-lg shadow-lg"
+                        src="https://youtube.com/embed/m89LAw4WJwk"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+            </div>
+
 
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
@@ -60,6 +84,21 @@ const NuitDeLInfo2023 = () => {
                     <li>Loris Czx - Étudiant(e) à IUT MONTPELLIER-SETE</li>
                 </ul>
             </div>
+
+            <div className="pb-5">
+                <h1 className="head-text">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Galerie
+                    </span>
+                </h1>
+            </div>
+
+            {imagesContext.map((image, index) => (
+                <div className="pb-5" key={index}>
+                    <img src={image} alt="ndi2023" className="w-full h-full object-contain"/>
+                </div>
+            ))}
+
         </section>
     );
 };

@@ -158,7 +158,7 @@ const Gradhire = () => {
             <div className="pb-5 object-contain">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold ">
-                        À Propos
+                        Contexte du Projet
                     </span>
                 </h2>
                 <p>

@@ -15,7 +15,7 @@ const NuitDeLInfo2022 = () => {
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
-                        À Propos du Projet
+                        Contexte du Projet
                     </span>
                 </h2>
                 <p>

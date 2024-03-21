@@ -111,19 +111,4 @@ const CodeGameJam = () => {
     );
 };
 
-
-// Gameplay :
-//
-//     Fate of the Same propose un gameplay dynamique centré sur la gestion du temps. Les joueurs doivent affronter des ennemis et résoudre des énigmes tout en surveillant une barre de temps. Chaque élimination de monstre permet de récupérer du pouvoir temporel, tandis qu'une capacité spéciale permet de figer le temps temporairement, au prix d'une consommation de ressources temporelles.
-//
-//     Bien que nous n'ayons pas eu le temps d'intégrer toutes nos idées, notre intention était d'inclure la possibilité d'envoyer des projectiles temporels, offrant ainsi une mécanique de combat encore plus dynamique et stratégique.
-//
-//     Expérience Personnelle :
-//
-//     Participer à la CodeGameJam2024 a été une aventure passionnante pour moi, combinant mes intérêts pour la programmation et les jeux vidéo. Travailler sur Fate of the Same m'a permis de repousser mes limites et d'explorer de nouvelles idées de gameplay en équipe.
-//
-//     Malgré les défis techniques et les contraintes de temps, je suis fier du résultat que notre équipe a accompli. Cette expérience collaborative m'a permis de développer mes compétences en programmation tout en partageant une passion commune pour la création de jeux vidéo.
-//
-// Fate of the Same restera pour moi une expérience mémorable et stimulante, et j'espère pouvoir continuer à explorer de nouvelles idées et à collaborer avec des talents créatifs dans le futur.
-
 export default CodeGameJam;

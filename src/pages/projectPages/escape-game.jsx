@@ -71,7 +71,7 @@ const EscapeGame = () => {
                         site web "La Grotte Obscure"
                     </span>
                 </h1>
-                <p><strong>Septembre 2022</strong></p>
+                <p className="font-bold">Septembre 2022</p>
             </div>
 
             <div className="pb-5">
@@ -81,9 +81,18 @@ const EscapeGame = () => {
                     </span>
                 </h2>
                 <p>
-                    L'équipe a pris en charge la conception d'un site web pour l'Escape Game "La Grotte Obscure" à la
-                    demande de clients, des élèves d'une autre classe. Notre mission consistait à concrétiser leur
-                    vision et leurs idées en un site interactif reflétant l'atmosphère unique de leur escape game.
+                    Lors de ce passionnant projet, mon équipe et moi nous sommes engagés dans la création d'un site web
+                    pour l'Escape Game "La Grotte Obscure", suite à la demande d'un autre groupe d'étudiants de l'IUT.
+                    Notre mission consistait à répondre à leurs besoins en leur présentant des idées et des concepts de
+                    design pour leur site web. Agissant en tant que prestataires, nous avons transformé leur vision en
+                    un site interactif qui capturerait l'essence unique de leur escape game.
+                </p>
+                <p>
+                    Cette collaboration
+                    intergroupe a été une expérience extrêmement enrichissante, d'autant plus que nous étions également
+                    clients d'un autre groupe pour notre propre projet de site web pour notre escape game. À travers
+                    cette dynamique, nous avons pu échanger des idées et des besoins, contribuant ainsi à la réalisation
+                    de deux projets uniques et passionnants.
                 </p>
             </div>
 

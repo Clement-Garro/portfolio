@@ -9,7 +9,7 @@ const NuitDeLInfo2022 = () => {
                         Nuit de l'Info 2022
                     </span>
                 </h1>
-                <p><strong>Décembre 2022</strong></p>
+                <p className="font-bold">Décembre 2022</p>
             </div>
 
             <div className="pb-5">
@@ -19,7 +19,10 @@ const NuitDeLInfo2022 = () => {
                     </span>
                 </h2>
                 <p>
-                    Lors de la Nuit de l'Info 2022, notre équipe a entrepris un projet passionnant axé sur la création d'un site web dédié à la prévention des MST. Notre objectif était de fournir une ressource en ligne complète et accessible, destinée à sensibiliser le public aux risques des maladies sexuellement transmissibles et à encourager des comportements sexuels sûrs.
+                    Lors de la Nuit de l'Info 2022, notre équipe a entrepris un projet passionnant axé sur la création
+                    d'un site web dédié à la prévention des MST. Notre objectif était de fournir une ressource en ligne
+                    complète et accessible, destinée à sensibiliser le public aux risques des maladies sexuellement
+                    transmissibles et à encourager des comportements sexuels sûrs.
                 </p>
             </div>
 

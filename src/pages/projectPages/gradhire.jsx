@@ -4,6 +4,7 @@ import dashboard from '../../assets/gradhire/dashboard.webp';
 import offres from '../../assets/gradhire/offres.webp';
 import infoAC from '../../assets/infoAC.pdf';
 import {BlockCompetence} from "../../components/components.js";
+
 const Gradhire = () => {
     const imagesContext = [acceuil, dashboard, offres];
     const competences = [
@@ -151,8 +152,8 @@ const Gradhire = () => {
                     Gradhire
                 </span>
                 </h1>
-                <p><strong>sept. 2023 - aujourd’hui</strong></p>
-                <p><strong>Associé à IUT MONTPELLIER-SETE</strong></p>
+                <p className="font-bold">sept. 2023 - aujourd’hui</p>
+                <p className="font-bold">Associé à IUT MONTPELLIER-SETE</p>
             </div>
 
             <div className="pb-5 object-contain">
@@ -164,25 +165,30 @@ const Gradhire = () => {
                 <p>
                     L'objectif en cours de ce projet est de concevoir une plateforme web dédiée à la recherche de stages
                     et d'alternances, exclusivement destinée aux étudiants du département informatique de
-                    Montpellier. <br/>
+                    Montpellier.
+                </p>
+                <p>
                     Pour garantir un accès restreint aux seuls étudiants, professeurs, secrétaires et entreprises
                     souhaitant publier leurs offres sur notre site, nous sommes en train de déployer un système
-                    d'authentification basé sur LDAP et de hachage de mots de passe. <br/>
-                    Cette plateforme est en cours de développement en mettant l'accent sur une interface intuitive,
-                    élégante et réactive, visant à offrir une expérience utilisateur agréable et optimale pour tous les
-                    utilisateurs. <br/>
-                    L'élégance du design et la réactivité de l'interface permettront à chacun de naviguer facilement et
-                    de tirer le meilleur parti de notre plateforme. De plus, le site proposera une gestion efficace des
-                    données grâce à une base de données performante et un backend PHP robuste. <br/>
-                    Cela garantira une utilisation fluide et une réponse rapide. Ce projet en cours de développement
-                    illustre mon savoir-faire technique en matière de développement web et mettra en évidence ma
-                    compétence à convertir des spécifications complexes et des besoins en solutions numériques. <br/>
-                    Nous sommes impatients de contribuer à la création d'un outil pour la communauté étudiante et les
-                    entreprises locales, facilitant ainsi la recherche de stages et d'alternances dans le domaine
-                    informatique à Montpellier.
+                    d'authentification basé sur LDAP et de hachage de mots de passe.
+                </p>
+                <p>
+                    L'élégance du design et la réactivité de l'interface permet à chacun de naviguer facilement et
+                    de tirer le meilleur parti de notre plateforme. De plus, le site propose une gestion efficace des
+                    données grâce à une base de données performante et un backend PHP robuste. Cela garantie une
+                    utilisation fluide et une réponse rapide.
                 </p>
             </div>
-
+            <div className="flex flex-col gap-8 mb-10">
+                {imagesContext.map((image, index) => (
+                    <img
+                        key={index}
+                        src={image}
+                        alt={`Image ${index}`}
+                        className="w-full h-auto rounded-lg shadow-2xl depth-effect"
+                    />
+                ))}
+            </div>
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold ">
@@ -192,35 +198,26 @@ const Gradhire = () => {
                 <ul>
                     <li>Mise en œuvre de solutions</li>
                     <li>Systèmes de gestion de la sécurité</li>
-                    <li>Gestion de la sécurité</li>
                     <li>Travail d'équipe</li>
-                    <li>Gestion de projet logiciel</li>
                     <li>Gestion de projet agile</li>
-                    <li>Gestion de projet web</li>
                     <li>PostgreSQL</li>
-                    <li>Scrum</li>
                     <li>Figma (logiciel)</li>
-                    <li>Analyse des besoins</li>
-                    <li>Analyse client</li>
-                    <li>Évaluation des besoins</li>
+                    <li>Analyse et évaluation du client et de ces besoins</li>
                     <li>Conception web</li>
                     <li>Tailwind CSS</li>
-                    <li>Esprit d’équipe</li>
                     <li>Travail d’équipe</li>
-                    <li>Gestion de projet</li>
                     <li>Scrum</li>
                     <li>GitHub</li>
                     <li>Git</li>
-                    <li>Développement front-end</li>
-                    <li>Développement web back-end</li>
-                    <li>Développement web</li>
+                    <li>Développement full-stack</li>
                     <li>Conception de bases de données</li>
                     <li>PL/SQL</li>
                     <li>SQL*Plus</li>
+                    <li>PostgreSQL</li>
                     <li>SQL</li>
                     <li>PhpMyAdmin</li>
                     <li>PHP</li>
-                    <li>Feuilles de style en cascade (CSS)</li>
+                    <li>CSS</li>
                     <li>JavaScript</li>
                     <li>HTML5</li>
                 </ul>
@@ -237,24 +234,6 @@ const Gradhire = () => {
                     <li>Giovanni Gozzo - Étudiant(e) à IUT MONTPELLIER-SETE</li>
                     <li>Marius Brouty - Étudiant(e) à IUT MONTPELLIER-SETE</li>
                 </ul>
-            </div>
-
-            <div className="pb-5">
-                <h2 className="subhead-text pb-4">
-                    <span className="gradient_text drop-shadow font-semibold">
-                        Galerie
-                    </span>
-                </h2>
-                <div className="flex flex-wrap gap-4">
-                    {imagesContext.map((image, index) => (
-                        <img
-                            src={image}
-                            alt={`Gradhire ${index}`}
-                            key={index}
-                            className="w-full h-full object-contain"
-                        />
-                    ))}
-                </div>
             </div>
             <div>
                 <h2 className="subhead-text pb-4">

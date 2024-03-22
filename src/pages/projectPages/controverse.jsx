@@ -75,7 +75,7 @@ const controverse = () => {
                         Site web "La Controverse"
                     </span>
                 </h1>
-                <p><strong>Novembre 2022 Décembre 2022</strong></p>
+                <p className="font-bold"><strong>Novembre 2022 Décembre 2022</strong></p>
                 <p><strong>Associé à IUT MONTPELLIER-SETE</strong></p>
             </div>
 
@@ -87,89 +87,88 @@ const controverse = () => {
                 </h2>
                 <div>
                     <p>
-                        Notre projet est le fruit d'une collaboration passionnante dans le cadre de notre première année
-                        de
-                        cursus en BUT. L'objectif principal était de développer nos compétences en rédaction d'articles
-                        tout
-                        en acquérant une expérience pratique dans la création d'un site web professionnel.
-                    </p><br/>
+                        Notre projet est né d'une collaboration palpitante lors de notre première année de cursus en
+                        BUT. L'objectif principal était de perfectionner nos compétences en rédaction d'articles tout en
+                        nous plongeant dans l'univers de la création de sites web professionnels.
+                    </p>
                     <p>
-                        Au cours de ce projet, nous avons travaillé en équipe pour rédiger une série d'articles.
-
-                        Chaque membre de l'équipe a apporté sa propre expertise et ses idées uniques, ce qui a permis
-                        d'enrichir la diversité et la qualité de notre contenu.
-                    </p><br/>
-                    <p>
-                        Une fois les articles rédigés, nous nous sommes lancés dans la création du site web qui
-                        servirait de
-                        plateforme pour les présenter au public. La conception de la navigation, des pages dynamiques et
-                        de
-                        la section de contact a nécessité une collaboration étroite et un travail d'équipe rigoureux.
-                    </p><br/>
-                    <p>
-                        Ma contribution spécifique à ce projet a été la conception et la mise en œuvre de la partie
-                        contact
-                        du site web. En veillant à ce qu'elle soit à la fois fonctionnelle et esthétique, j'ai travaillé
-                        pour créer une interface conviviale permettant aux visiteurs de nous contacter facilement tout
-                        en
-                        préservant le professionnalisme de notre projet.
+                        Au fil de ce projet, nous avons travaillé main dans la main pour écrire une série d'articles.
+                        Chacun de nous a
+                        apporté son expertise et ses idées uniques, enrichissant ainsi la diversité et la qualité de
+                        notre contenu.
+                    </p>
+                    <p>Une fois nos écrits achevés, nous avons entrepris la conception du site web qui
+                        servirait de vitrine à nos travaux. La mise en place de la navigation, des pages dynamiques et
+                        de la section de contact a demandé une collaboration étroite et un travail d'équipe minutieux.
                     </p>
                 </div>
             </div>
 
             <div className="pb-5">
-                <h2 className="subhead-text pb-4">
+                <h1 className="subhead-text py-4">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Mon implication dans le projet
+                    </span>
+                </h1>
+                <p>
+                    Mon rôle spécifique dans ce projet a été la conception et l'implémentation de la section de contact
+                    du site web. J'ai veillé à ce qu'elle soit à la fois fonctionnelle et esthétique, afin de créer une
+                    interface conviviale permettant aux visiteurs de nous contacter aisément tout en préservant le
+                    professionnalisme de notre projet.
+                </p>
+            </div>
+                <div className="pb-5">
+                    <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
                         Compétences Acquises
                     </span>
-                </h2>
-                <ul className="list-disc pl-8">
-                    <li>Recherche d'information</li>
-                    <li>Rédaction d'article web</li>
-                    <li>Structuration de site web</li>
-                    <li>Création d'interfaces homme-machine</li>
-                </ul>
-            </div>
+                    </h2>
+                    <ul className="list-disc pl-8">
+                        <li>Rédaction d'article web</li>
+                        <li>Élaboration d'architecture de site web</li>
+                        <li>Conception et réalisation d'interfaces homme-machine</li>
+                    </ul>
+                </div>
 
-            <div className="pb-5">
-                <h2 className="subhead-text pb-4">
+                <div className="pb-5">
+                    <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
                         Contributeur
                     </span>
-                </h2>
-                <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
-                <p>Julien Costa-Castro - 1er BUT chez IUT de Montpellier-Sète</p>
-            </div>
+                    </h2>
+                    <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
+                    <p>Julien Costa-Castro - 1er BUT chez IUT de Montpellier-Sète</p>
+                </div>
 
 
-            <div>
-                <h2 className="subhead-text pb-4">
+                <div>
+                    <h2 className="subhead-text pb-4">
                     <span className="drop-shadow font-semibold">
                         Relations entre les réalisations personnelles et le
                         <a href={infoAC} target="_blank" className="underline"> programme
                         </a> de BUT Informatique
 </span>
 
-                </h2>
-                <div className={`grid sm:grid-cols-1 lg:grid-cols-2 gap-4 pb-5`}>
-                    {competences.map((competence, index) => (
-                        // Ajoutez une classe spéciale au dernier élément s'il est impair
-                        console.log(isImpair, index, competences.length - 1),
-                            <BlockCompetence
-                                key={index}
-                                AC={competence.AC}
-                                ACtxt={competence.ACtxt}
-                                lvl={competence.lvl}
-                                Ex={competence.Ex}
-                                // Utilisez la classe spéciale "col-span-2" si c'est le dernier élément impair
-                                className={isImpair && index === competences.length - 1 ? "col-span-2" : ""}
-                            />
-                    ))}
+                    </h2>
+                    <div className={`grid sm:grid-cols-1 lg:grid-cols-2 gap-4 pb-5`}>
+                        {competences.map((competence, index) => (
+                            // Ajoutez une classe spéciale au dernier élément s'il est impair
+                            console.log(isImpair, index, competences.length - 1),
+                                <BlockCompetence
+                                    key={index}
+                                    AC={competence.AC}
+                                    ACtxt={competence.ACtxt}
+                                    lvl={competence.lvl}
+                                    Ex={competence.Ex}
+                                    // Utilisez la classe spéciale "col-span-2" si c'est le dernier élément impair
+                                    className={isImpair && index === competences.length - 1 ? "col-span-2" : ""}
+                                />
+                        ))}
+                    </div>
                 </div>
-            </div>
         </section>
 
-    )
+)
 }
 
 export default controverse;

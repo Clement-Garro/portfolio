@@ -116,7 +116,23 @@ const AventuriersDuRail = () => {
                     les algorithmes de graphes.
                 </p>
             </div>
-
+            <div>
+                <h2 className="subhead-text pb-4">
+                    <span className="gradient_text drop-shadow font-semibold">
+                        Galerie du projets
+                    </span>
+                </h2>
+            </div>
+            <div className="flex flex-col gap-8 mb-10">
+                {imagesContext.map((image, index) => (
+                    <img
+                        key={index}
+                        src={image}
+                        alt={`Image ${index}`}
+                        className="w-full h-auto rounded-lg shadow-2xl depth-effect"
+                    />
+                ))}
+            </div>
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
@@ -125,10 +141,9 @@ const AventuriersDuRail = () => {
                 </h2>
                 <ul className="list-disc pl-8">
                     <li>Développement orienté objets</li>
-                    <li>Tests unitaires</li>
+                    <li>Développement de tests unitaires</li>
                     <li>Gestion de version avec Git</li>
-                    <li>Algorithmes de graphes pour la stratégie de jeu</li>
-                    <li>Création d'interfaces homme-machine</li>
+                    <li>Conception et réalisation d'interfaces homme-machine</li>
                 </ul>
             </div>
 
@@ -140,19 +155,6 @@ const AventuriersDuRail = () => {
                 </h2>
                 <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
             </div>
-
-            <div>
-                <h2 className="subhead-text pb-4">
-                    <span className="gradient_text drop-shadow font-semibold">
-                        Galerie
-                    </span>
-                </h2>
-            </div>
-            {imagesContext.map((image, index) => (
-                <div className="pb-5" key={index}>
-                    <img src={image} alt="railihm" className="w-full h-full object-contain"/>
-                </div>
-            ))}
 
             <div>
                 <h2 className="subhead-text pb-4">

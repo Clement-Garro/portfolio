@@ -92,7 +92,7 @@ const botVinted = () => {
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Les Enseignements Tirés
+                        Les Enseignements Tirés de cette Expérience
                     </span>
                 </h2>
                 <p className="mb-4">

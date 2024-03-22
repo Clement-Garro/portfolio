@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/foxs-islands-163b68e09fcc47618450150be77
 Title: Fox's islands
 */
 
-import React, {useRef, useEffect} from "react";
+import React, {useRef, useEffect, useState} from "react";
 import {useGLTF} from "@react-three/drei";
 import {useFrame, useThree} from "@react-three/fiber";
 import {a} from "@react-spring/three";
@@ -15,7 +15,7 @@ import GreenTree from "../components/Island/GreenTree.jsx";
 import {BlueHouse, BlueTree, Island, PinkHouse, RedHouse, RedTree} from "../components/components.js";
 import YellowTree from "../components/Island/YellowTree.jsx";
 
-const Map = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
+const Map = ({isRotating, setIsRotating, setCurrentStage, currentStage, ...props}) => {
     const islandRef = useRef();
 
     const {gl, viewport} = useThree();
@@ -24,6 +24,13 @@ const Map = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
     const lastX = useRef(0);
     const rotationSpeed = useRef(0);
     const dampingFactor = 0.95;
+
+    const [lastStage, setLastStage] = useState(null);
+
+    useEffect(() => {
+        setLastStage(currentStage);
+    }, [currentStage]);
+
 
     const handlePointerDown = (e) => {
         e.stopPropagation();
@@ -107,7 +114,7 @@ const Map = ({isRotating, setIsRotating, setCurrentStage, ...props}) => {
                     setCurrentStage(1);
                     break;
                 default:
-                    setCurrentStage(null);
+                    setCurrentStage(lastStage);
             }
         }
     })

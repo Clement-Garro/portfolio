@@ -14,6 +14,7 @@ const Home = () => {
     audioRef.current.volume = 0.01;
     const [isRotating, setIsRotating] = useState(false)
     const [currentStage, setCurrentStage] = useState(1)
+    const [previousStage, setPreviousStage] = useState(null);
     const [isPlayingMusic, setIsPlayingMusic] = useState(true)
     const [hasUserInteracted, setHasUserInteracted] = useState(false);
 
@@ -106,6 +107,7 @@ const Home = () => {
                         isRotating={isRotating}
                         setIsRotating={setIsRotating}
                         setCurrentStage={setCurrentStage}
+                        currentStage={currentStage}
                     />
                 </Suspense>
             </Canvas>

@@ -1,7 +1,7 @@
 import React from 'react';
 import about from '../../assets/portfolio/about.webp';
 import projects from '../../assets/portfolio/projects.webp';
-import homemp4 from '../../assets/portfolio/contact.mp4';
+import homemp4 from '../../assets/portfolio/home.mp4';
 import contactmp4 from '../../assets/portfolio/contact.mp4';
 
 const Portfolio = () => {

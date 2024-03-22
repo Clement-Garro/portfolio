@@ -205,6 +205,16 @@ body:has(.card[data-color="green"]:hover) {
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
 
+.video-fade {
+    animation: fade 1s infinite;
+}
+
+@keyframes fade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
 h1 {
     font-size: 2rem;
     font-weight: bold;

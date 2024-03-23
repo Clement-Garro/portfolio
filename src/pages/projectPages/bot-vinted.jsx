@@ -6,10 +6,10 @@ const botVinted = () => {
             <div className="pb-5">
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Création de mon Bot Vinted Discord
+                        Mon bot Vinted pour Discord
                     </span>
                 </h1>
-                <p><strong>Date: </strong>Mars 2023</p>
+                <p className="font-bold">Date: Mars 2023</p>
             </div>
 
             <div className="pb-5 object-contain">

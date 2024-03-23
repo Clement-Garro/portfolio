@@ -1,50 +1,52 @@
-import { CTA } from "../components/components.js";
-import { Link } from "react-router-dom";
-import { projects } from "../constants";
+import {CTA,ProjectBlock} from "../components/components.js";
+import {Link} from "react-router-dom";
+import {universityProjects, personalProjects, benevolatProjects} from "../constants";
 import Footer from "../components/Footer.jsx";
 
 const Projects = () => {
     return (
         <section className='max-container'>
-            <h1 className='head-text'>
-                Mes{" "}
-                <span className='gradient_text drop-shadow font-semibold'>
-                    Projets
+            <div>
+                <h1 className='head-text'>
+                    Mes{" "}
+                    <span className='gradient_text drop-shadow font-semibold'>
+                    Projets Personnels
                 </span>
-            </h1>
-
-            <p className='text-slate-500 mt-2 leading-relaxed'>
-                Voici quelques projets que j'ai réalisé.
-            </p>
-
-            <div className='flex flex-wrap my-20 gap-16'>
-                {projects.map((project) => (
-                    <Link to={`${project.link}`} className='lg:w-[400px] w-full' key={project.name}>
-                        <div className='block-container w-12 h-12'>
-                            <div className={`btn-back rounded-xl ${project.theme}`} />
-                            <div className='btn-front rounded-xl flex justify-center items-center'>
-                                <img
-                                    src={project.iconUrl}
-                                    alt='threads'
-                                    className='w-1/2 h-1/2 object-contain'
-                                />
-                            </div>
-                        </div>
-
-                        <div className='mt-5 flex flex-col'>
-                            <h4 className='text-2xl font-poppins font-semibold'>
-                                {project.name}
-                            </h4>
-                            <p className='mt-2 text-slate-500'>{project.description}</p>
-                        </div>
-                    </Link>
-                ))}
+                </h1>
+                <div className='flex flex-wrap my-20 justify-between'>
+                    <ProjectBlock projects={personalProjects}/>
+                </div>
             </div>
 
-            <hr className='border-slate-200' />
+            <div>
+                <h1 className='head-text'>
+                    Mes{" "}
+                    <span className='gradient_text drop-shadow font-semibold'>
+                    Projets en Bénévolat
+                </span>
+                </h1>
+                <div className='flex flex-wrap my-20 gap-16'>
+                    <ProjectBlock projects={benevolatProjects}/>
+                </div>
+            </div>
 
-            <CTA />
-            <Footer />
+            <div>
+                <h1 className='head-text'>
+                    Mes{" "}
+                    <span className='gradient_text drop-shadow font-semibold'>
+                    Projets Universitaires
+                </span>
+                </h1>
+                <div className='flex flex-wrap my-20 gap-16'>
+                    <ProjectBlock projects={universityProjects}/>
+                </div>
+            </div>
+
+
+            <hr className='border-slate-200'/>
+
+            <CTA/>
+            <Footer/>
         </section>
     );
 };

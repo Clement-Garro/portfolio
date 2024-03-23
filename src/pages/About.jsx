@@ -19,36 +19,107 @@ const About = () => {
                 👋
             </h1>
 
-            <div className='my-10 flex flex-col gap-4 text-black'>
-                <h3 className='subhead-text'>Qui suis-je ?</h3>
-                <p>
-                    Passionné par l'informatique, la culture japonaise, les jeux vidéo et le
-                    sport, je trouve un équilibre entre mes études et mes centres d'intérêt.
-                    Je suis un étudiant en deuxième année de Bachelor Universitaire de Technologie (BUT) en informatique
-                    à l'IUT de Montpellier.
-                </p>
-                <h3 className='subhead-text'>Traits de personnalité :</h3>
-                <p>
-                    Ma <b>rigueur</b>, ma <b>curiosité</b>, ma <b>créativité</b> et ma <b>détermination</b>,
-                    me permettent de mener mes projets avec une approche <b>logique</b> et <b>motivée</b>, tout en restant <b>dynamique</b> et <b>autonome</b>.
-                    Mon <b>bon relationnel</b> et mon bon <b>esprit d'équipe</b> me permettent de collaborer efficacement avec les autres,
-                    et ma <b>persévérance</b> me pousse à atteindre mes objectifs.
-                </p>
-                <h3 className='subhead-text'> Qu’est-ce que j’aime ?</h3>
-                <p>
-                    Mon enthousiasme pour la technologie m'a naturellement conduit à explorer la construction d'ordinateurs et à maîtriser plusieurs langages de programmation.
-                    En parallèle, ma fascination pour la culture japonaise, les jeux vidéo et le sport enrichit mon quotidien et me permet de cultiver une curiosité sans cesse renouvelée.
-                    De plus, ma passion pour la cuisine me pousse à expérimenter de nouvelles recettes et à découvrir les saveurs du monde, ajoutant ainsi une dimension créative à ma vie.
-                </p>
+            <div className='my-10 flex flex-col gap-14 text-black'>
+                <div>
+                    <h2 className='subhead-text'>Qui suis-je ?</h2>
+                    <p className="p-text">
+                        Je suis un étudiant en informatique, <b>passionné</b> par la technologie, la culture japonaise,
+                        les jeux vidéo, le sport, la cuisine et la musique. J'ai <b>19 ans</b> depuis le 29
+                        septembre 2021 et je suis actuellement en BUT Informatique à l'IUT de Montpellier-Sète. Mes
+                        passions
+                        me permettent de <b>m'épanouir pleinement et de cultiver une curiosité sans cesse
+                        renouvelée</b> dans ma
+                        vie quotidienne. Mais surtout dans <b>la conception et la réalisation</b> de tous mes projets
+                        personnels et
+                        professionnels.
+                    </p>
+                </div>
+                <div>
+                    <h3 className='subhead-text'>Traits de personnalité :</h3>
+                    <p className="p-text">
+                        Ma <b>rigueur</b>, ma <b>curiosité</b>, ma <b>créativité</b> et ma <b>détermination</b>,
+                        me permettent de mener mes projets avec une approche <b>logique</b> et <b>motivée</b>, tout en
+                        restant <b>dynamique</b> et <b>autonome</b>.
+                        Mon <b>bon relationnel</b> et mon bon <b>esprit d'équipe</b> me permettent de collaborer
+                        efficacement avec les autres,
+                        et ma <b>persévérance</b> me pousse à atteindre mes objectifs.
+                    </p>
+                </div>
+                <div>
+                    <h3 className='subhead-text'> Qu’est-ce que j’aime ?</h3>
+                    <p className="p-text">
+                        Mon enthousiasme pour la technologie m'a naturellement conduit à explorer l'informatique, que ce
+                        soit pour <b>monter mes propres ordinateurs</b> ou pour <b>maîtriser plusieurs langages de
+                        programmation</b>.
+                        En parallèle, ma fascination pour la <b>culture japonaise</b>, <b>les jeux vidéo et le
+                        sport</b> enrichit
+                        mon quotidien et me permet de cultiver une curiosité sans cesse renouvelée.
+                        De plus, ma passion pour <b>la cuisine</b> me pousse à expérimenter de nouvelles recettes et à
+                        découvrir
+                        les saveurs du monde, ajoutant ainsi une dimension créative à ma vie.
+                    </p>
+                    <p className="p-text">
+                        Je pratique le <b>volley-ball</b> depuis mon entrée au collège, ce qui me permet de développer
+                        des
+                        compétences essentielles telles que <b>la communication</b>, <b>la coordination et la
+                        concentration</b>. En
+                        pratiquant ce sport, j'apprends <b>l'importance du travail d'équipe et de la persévérance</b>,
+                        des
+                        valeurs
+                        qui se reflètent également dans ma vie professionnelle et personnelle.
+                        M'offrant un environnement stimulant où je peux me surpasser et relever de
+                        nouveaux défis, ce qui contribue à mon développement personnel et à mon épanouissement.
+                    </p>
+                    <p className="p-text">
+                        J'aime aussi lancer des tricks en <b>trottinette freestyle</b>, une pratique que j'ai explorée
+                        pendant 3
+                        ans avant de commencer à faire du <b>skate</b>. Depuis ma sortie à <b>Andorre</b>, je me suis
+                        passionné pour le
+                        <b>snowboard</b>. Cette expérience a été incroyable et inoubliable, et je souhaite continuer à
+                        la
+                        pratiquer
+                        avec passion.
 
-                <h3 className='subhead-text'>Quelles sont mes compétences et mes capacités ?</h3>
-                <p>
-                    Mes compétences résident dans ma capacité à penser de manière stratégique, à résoudre des problèmes
-                    de manière efficace et à atteindre mes objectifs avec <b>détermination</b>. Je suis à l'aise dans des
-                    domaines tels que le développement d'idées novatrices, l'analyse de données complexes et la
-                    planification à long terme. Mon approche méthodique et ma soif de connaissances me permettent
-                    d'atteindre des niveaux élevés de réussite dans mes entreprises.
-                </p>
+                        <b>Les voitures</b> sont également l'une de mes passions. J'ai eu l'occasion de me retrouver sur
+                        un
+                        circuit
+                        à bord d'une <b>Nissan 370Z</b> pour mes 17 ans. Je souhaite pouvoir modifier et améliorer
+                        une <b>Mazda
+                        RX-7
+                        de 1993</b> pour en faire la voiture dont j'ai toujours rêvé. La <b>sensation de vitesse et de
+                        liberté</b>
+                        procurée par ces passions m'apporte un sentiment d'attachement profond aux sensations fortes et
+                        à
+                        l'adrénaline.
+                    </p>
+                </div>
+                <div>
+                    <h3 className='subhead-text'>Quelles sont mes capacités ?</h3>
+                    <p className="p-text">
+                        Mes projets personnels et mes études en informatique m'ont permis d'<b>acquérir différents
+                        points de
+                        vue et une vision globale</b> lors de mes travaux, notamment dans le domaine de la
+                        programmation.
+                        Lorsque je code, j'adopte une approche méticuleuse en explorant toutes les possibilités et en
+                        envisageant divers scénarios avant de m'entreprendre dans une nouvelle idée. Cela me permet
+                        d'<b>anticiper les défis potentiels et d'élaborer des solutions efficaces</b>.
+                    </p>
+                    <p className="p-text">
+                        De plus, ma pratique du volley-ball m'a doté d'un <b>esprit combatif</b> et
+                        d'une <b>créativité</b> qui
+                        alimentent ma passion pour l'apprentissage continu. Cette expérience m'a également permis de
+                        développer des <b>compétences essentielles pour travailler en équipe</b> et pour exercer un
+                        <b>leadership efficace</b>. J'ai ainsi développé une capacité à travailler dans une équipe
+                        soudée, à
+                        encourager la collaboration et à résoudre les problèmes de manière collective.
+                    </p>
+                    <p className="p-text">
+                        Ma passion pour les jeux vidéo m'a enseigné à être <b>réactif et dynamique</b>, des qualités qui
+                        se
+                        révèlent précieuses dans mon travail et ma vie quotidienne.
+                    </p>
+                </div>
+
             </div>
 
             <div className='py-10 flex flex-col'>
@@ -128,7 +199,7 @@ const About = () => {
                     Objectif
                 </h1>
                 <h3 className='subhead-text'>Actuel </h3>
-                <p>
+                <p className="p-text">
                     Mon objectif actuel est de trouver une alternance dans le domaine du développement d'applications ou
                     web. Cette opportunité me permettra non seulement d'approfondir mes compétences techniques, mais
                     aussi de m'épanouir pleinement dans des domaines qui me passionnent véritablement. Je suis convaincu
@@ -136,7 +207,7 @@ const About = () => {
                     domaine de l'informatique.
                 </p>
                 <h3 className='subhead-text'>Futur </h3>
-                <p>
+                <p className="p-text">
                     Je souhaite poursuivre des études d'ingénierie pour devenir ingénieur logiciel. Mon objectif est de
                     maîtriser les compétences nécessaires pour concevoir des solutions informatiques innovantes et
                     contribuer au
@@ -150,8 +221,8 @@ const About = () => {
             </div>
 
             <hr className='border-slate-200'/>
-            <CTA />
-            <Footer />
+            <CTA/>
+            <Footer/>
 
         </section>
     )

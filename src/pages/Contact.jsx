@@ -78,7 +78,7 @@ const Contact = () => {
             <div className='relative flex lg:flex-row flex-col p-0'>
                 {alert.show && <Alert {...alert} />}
 
-                <div className='flex-1 min-w-[50%] flex flex-col justify-center'>
+                <div className='flex-1 min-w-[60%] flex flex-col justify-center'>
                     <h1 className='head-text'>Entrer en {' '}
                         <span className='gradient_text drop-shadow font-semibold'> contact
                 </span>

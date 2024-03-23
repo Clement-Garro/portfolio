@@ -139,27 +139,44 @@ export const socialLinks = [
     }
 ];
 
-export const projects = [
+export const personalProjects = [
     {
         iconUrl: portfolio,
         theme: 'btn-back-red',
         name: 'Portfolio',
-        description: 'Mon portfolio',
+        description: 'Mon portfolio, la où toutes mes créations sont regroupées',
         link: '/project/portfolio',
     },
     {
-        iconUrl: gradhire,
+        iconUrl: bot,
         theme: 'btn-back-gray',
-        name: 'Gradhire',
-        description: 'Site web pour aider les étudiants en informatiques de montpellier à trouver un stage/alternance',
-        link: '/project/gradhire',
+        name: 'Bot Vinted pour discord',
+        description: 'Bot de serveur discord en python pour suivre les annonces intéressante de vinted que vous avez configuré',
+        link: '/project/bot-vinted',
     },
     {
-        iconUrl: train,
-        theme: 'btn-back-yellow',
-        name: 'Aventurier du rail',
-        description: 'Jeu en JavaFX pour un IHM de l\'aventurier du rail version Graphe',
-        link: '/project/aventurier-du-rail',
+        iconUrl: bot,
+        theme: 'btn-back-green',
+        name: 'Bot de trading en cryptomonnaie pour FTX',
+        description: 'Bot python pour trader en cryptomonnaie sur la plateforme FTX, avec des stratégies de trading basé sur du backtesting via les données de binance',
+        link: '/project/bot-trading',
+    }
+]
+
+export const benevolatProjects = [
+    {
+        iconUrl: game,
+        theme: 'btn-back-pink',
+        name: 'Jeux vidéo "Shadow of Memory"',
+        description: 'Jeu vidéo conçu sur UnrealEngine5 lors de la 8ᵉ édition du Code Game Jam 2024 à Montpellier',
+        link: '/project/shadow-of-memory',
+    },
+    {
+        iconUrl: moon,
+        theme: 'btn-back-green',
+        name: 'Nuit de L\'info 2023',
+        description: 'Conception d\'un site web sur l\'importance de la prévention contre le changement climatique pour la Nuit de l\'Info 2023.',
+        link: '/project/ndi-2023',
     },
     {
         iconUrl: game,
@@ -169,52 +186,41 @@ export const projects = [
         link: '/project/fate-of-the-same',
     },
     {
-        iconUrl: game,
-        theme: 'btn-back-pink',
-        name: 'shadow of memory',
-        description: 'Jeu vidéo conçu lors de la 8ᵉ édition du Code Game Jam 2024 à l\'IUT de Montpellier-Sète.',
-        link: '/project/shadow-of-memory',
-    },
-    {
         iconUrl: moon,
-        theme: 'btn-back-pink',
+        theme: 'btn-back-red',
         name: 'Nuit de L\'info 2022',
-        description: 'Site web pour la prévention sur les MST',
+        description: 'Conception d\'un site web sur la prévention des MST lors de la Nuit de l\'info 2022',
         link: '/project/ndi-2022',
     },
+]
+
+export const universityProjects = [
     {
-        iconUrl: moon,
-        theme: 'btn-back-green',
-        name: 'Nuit de L\'info 2023',
-        description: 'Site web sur la prevention climatique',
-        link: '/project/ndi-2023',
+        iconUrl: gradhire,
+        theme: 'btn-back-orange',
+        name: 'Gradhire',
+        description: 'Conception d\'un site web pour aider les étudiants en informatiques de montpellier à trouver un stage/alternance',
+        link: '/project/gradhire',
+    },
+    {
+        iconUrl: train,
+        theme: 'btn-back-yellow',
+        name: 'Jeux vidéo java "Les aventurier du rail"',
+        description: 'Jeu en JavaFX pour jouer à une version Informatique du jeu de société "Les aventuriers du rail"',
+        link: '/project/aventurier-du-rail',
     },
     {
         iconUrl: escape_game,
         theme: 'btn-back-blue',
-        name: 'Site web Escape Game',
-        description: 'Conception d\'un site web de l\'escape game du client',
+        name: 'Escape Game "La Grotte Obscure"',
+        description: 'Conception d\'un site web pour l\'Escape Game "La Grotte Obscure"',
         link: '/project/escape-game',
     },
     {
         iconUrl: controverse,
-        theme: 'btn-back-black',
-        name: 'Controverse',
-        description: 'Site web sur la controverse de notre groupe sur la question : Le numérique favorise-t-il la participation démocratique ?',
-        link: '/project/controverse',
-    },
-    {
-        iconUrl: bot,
-        theme: 'btn-back-gray',
-        name: 'Bot Vinted',
-        description: 'Bot simple pour envoyer des notifications suite à la mise en vente de nouveaux objets sur vinted',
-        link: '/project/bot-vinted',
-    },
-    {
-        iconUrl: bot,
         theme: 'btn-back-red',
-        name: 'Bot de trading',
-        description: 'Bot simple de trading en crypto',
-        link: '/project/bot-trading',
+        name: 'Site web "La Controverse"',
+        description: 'Rédaction d\'une controverse répondant à la question : Le numérique favorise-t-il la participation démocratique ? Ainsi que la conception du Site web vitrine pour les articles ',
+        link: '/project/controverse',
     }
 ];

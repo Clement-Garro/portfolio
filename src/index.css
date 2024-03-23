@@ -26,15 +26,23 @@ body:has(.card[data-color="green"]:hover) {
     }
 
     .head-text {
-        @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+        @apply sm:text-6xl text-3xl font-extrabold sm:leading-snug font-poppins lg:text-justify;
     }
 
     .subhead-text {
-        @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+        @apply font-semibold sm:text-4xl text-xl relative font-poppins lg:text-justify;
+    }
+
+    .p-text {
+        @apply lg:text-2xl sm:text-base font-poppins mt-10 lg:text-justify;
+    }
+
+    .project-head-text {
+        @apply sm:text-2xl text-2xl font-extrabold sm:leading-snug font-poppins lg:text-justify;
     }
 
     .gradient_text {
-        @apply bg-gradient-to-r from-[#138086] to-[#534666] bg-clip-text text-transparent;
+        @apply bg-gradient-to-r from-[#138086] to-[#534666] bg-clip-text text-transparent font-extrabold;
     }
 
     .blue_gradient_text {
@@ -209,11 +217,18 @@ body:has(.card[data-color="green"]:hover) {
     animation: fade 1s infinite;
 }
 
+.link-hover-effect:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
 @keyframes fade {
     0% { opacity: 1; }
     50% { opacity: 0.5; }
     100% { opacity: 1; }
 }
+
 
 h1 {
     font-size: 2rem;

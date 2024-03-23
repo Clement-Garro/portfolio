@@ -29,8 +29,10 @@ import Cplusplus from "./Cplusplus.svg"
 import php from "./php.svg"
 import but from './but.svg'
 import iconSite from './iconSite.svg'
+import chevron from './chevron.svg'
 
 export {
+    chevron,
     iconSite,
     but,
     php,

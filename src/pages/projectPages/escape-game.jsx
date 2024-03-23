@@ -2,8 +2,9 @@ import React from 'react';
 import infoAC from "../../assets/infoAC.pdf";
 
 import {BlockCompetence} from "../../components/components.js";
+import chevron from "../../assets/icons/chevron.svg";
 
-const EscapeGame = () => {
+const EscapeGame = (isMobile) => {
     const competences = [
         {
             AC: "CE 1.01",
@@ -65,13 +66,25 @@ const EscapeGame = () => {
 
     return (
         <section className="project-info-box">
-            <div className="pb-5">
-                <h1 className="head-text">
-                    <span className="gradient_text drop-shadow font-semibold">
-                        site web "La Grotte Obscure"
+            <div>
+                <div className="flex flex-row justify-between">
+                    <h1 className='head-text'>
+                    <span className='gradient_text drop-shadow font-semibold'>
+                    {isMobile ? "La Grotte Obscure" : "Site Web Nuit de l'Info 2023"}
                     </span>
-                </h1>
-                <p className="font-bold">Septembre 2022</p>
+                    </h1>
+                </div>
+                <div className="flex flex-row justify-between pb-5">
+                    <p className="font-bold">Novembre 2022 Décembre 2022</p>
+                    <div className="flex flex-row items-center gap-10 group cursor-pointer relative">
+                        {!isMobile && (<div
+                            className="opacity-0 scale-50 transition-all ease-in-out transform -translate-x-0 absolute group-hover:opacity-100 group-hover:translate-x-2 right-0">
+                            <img src={chevron} alt="chevron" className="w-10 h-10"/>
+                        </div>)}
+                        <a href="https://github.com/Clement-Garro/SAE-1.6"
+                           className={`font-bold underline transition-colors ease-in-out group-hover:no-underline group-hover:blue_gradient_text ${isMobile ? 'pr-0' : 'pr-8'}`}>{isMobile ? "Lien Github" : "Lien vers le Github"}</a>
+                    </div>
+                </div>
             </div>
 
             <div className="pb-5">

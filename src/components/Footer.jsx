@@ -19,7 +19,7 @@ const Footer = () => {
                         <img
                             src={socialLink.iconUrl}
                             alt={socialLink.name}
-                            className='w-6 h-6'
+                            className='w-6 h-6 transition-all ease-in-out transform hover:scale-110 hover:rotate-12 hover:shadow-xl'
                         />
                     </a>
                 ))}

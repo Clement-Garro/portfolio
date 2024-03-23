@@ -4,7 +4,7 @@ const botTrading = () => {
             <div className="pb-5">
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Bot de Trading de Cryptomonnaies
+                        Mon bot de Trading Crypto
                     </span>
                 </h1>
                 <p className="font-bold">Date : 2021-2022</p>

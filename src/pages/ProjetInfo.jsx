@@ -19,6 +19,19 @@ const ProjetInfo = () => {
         loadComponent.then(r => r);
     }, [fileName]);
 
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        function handleResize() {
+            setIsMobile(window.innerWidth <= 768); // Change 768 to the breakpoint of your choice
+        }
+
+        handleResize(); // Check on initial render
+        window.addEventListener('resize', handleResize); // Add listener for window resize
+
+        return () => window.removeEventListener('resize', handleResize); // Clean up on component unmount
+    }, []);
+
     console.log(fileName)
     console.log(JsxComponent)
     return (
@@ -28,7 +41,7 @@ const ProjetInfo = () => {
                     JsxComponent ? 'top-28' : 'h-screen'
                 } left-0 right-0 z-10 flex items-center justify-center`}
             >
-                {error || !JsxComponent ? <InCreation/> : <JsxComponent/>}
+                {error || !JsxComponent ? <InCreation/> : <JsxComponent isMobile={isMobile} />}
             </div>
         </section>
     );

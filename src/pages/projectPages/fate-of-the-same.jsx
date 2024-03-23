@@ -1,15 +1,28 @@
 import React from 'react';
+import chevron from "../../assets/icons/chevron.svg";
 
-const CodeGameJam = () => {
+const CodeGameJam = ({isMobile}) => {
     return (
         <section className="project-info-box">
-            <div className="pb-5">
-                <h1 className="head-text">
-                    <span className="gradient_text drop-shadow font-semibold">
-                        Fate of the Same
+            <div>
+                <div className="flex flex-row justify-between">
+                    <h1 className='head-text'>
+                    <span className='gradient_text drop-shadow font-semibold'>
+                    {isMobile ? "Fate of the Same" : "Jeux vidéo Unity \"Fate of the Same\""}
                     </span>
-                </h1>
-                <p><strong>Date: </strong>Janvier 2023</p>
+                    </h1>
+                </div>
+                <div className="flex flex-row justify-between pb-5">
+                    <p className="font-bold">Date: Janvier 2023</p>
+                    <div className="flex flex-row items-center gap-10 group cursor-pointer relative">
+                        {!isMobile && (<div
+                            className="opacity-0 scale-50 transition-all ease-in-out transform -translate-x-0 absolute group-hover:opacity-100 group-hover:translate-x-2 right-0">
+                            <img src={chevron} alt="chevron" className="w-10 h-10"/>
+                        </div>)}
+                        <a href="https://github.com/Clement-Garro/Game-jam-2023"
+                           className={`font-bold underline transition-colors ease-in-out group-hover:no-underline group-hover:blue_gradient_text ${isMobile ? 'pr-0' : 'pr-10'}`}>{isMobile ? "Lien Github" : "lien vers le Github"}</a>
+                    </div>
+                </div>
             </div>
 
             <div className="pb-5 object-contain">

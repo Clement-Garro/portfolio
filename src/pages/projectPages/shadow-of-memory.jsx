@@ -1,15 +1,15 @@
 import React from "react";
 
-const shadowOfMemory = () => {
+const shadowOfMemory = ({isMobile}) => {
     return (
         <section className="project-info-box">
             <div className="pb-5">
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Shadow of Memory
+                        Jeux vidéo UnrealEngine5 "Shadow of Memory"
                     </span>
                 </h1>
-                <p><strong>Date: </strong>Janvier 2024</p>
+                <p className="font-bold">Date:Janvier 2024</p>
             </div>
 
             <div className="pb-5 object-contain">
@@ -22,6 +22,27 @@ const shadowOfMemory = () => {
                     Durant la CodeGameJam2024, notre équipe s'est lancée dans une aventure audacieuse sur Unreal Engine
                     5 : la création de Shadow of Memory, un jeu vidéo en 3D à la troisième personne qui transporte les
                     joueurs dans un monde mystérieux où le temps et la mémoire s'entremêlent.
+                </p>
+            </div>
+
+            <div className="pb-5" key="videoYoutube">
+                <h2 className="subhead-text pb-4">
+                        <span className="gradient_text drop-shadow font-semibold">
+                            Vidéo de Gameplay
+                        </span>
+                </h2>
+                <div className="pb-5">
+                    <iframe
+                        className="w-full h-96 object-cover rounded-lg shadow-lg"
+                        src="https://youtube.com/embed/OoIJkiQOXEQ"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
+                <p className="italic">
+                    Pour des raisons de droits d'auteur sur la music, le son a été retiré de la vidéo.
                 </p>
             </div>
 
@@ -94,35 +115,13 @@ const shadowOfMemory = () => {
 
                 </p>
             </div>
-            <div className="pb-5" key="videoYoutube">
-                <h2 className="subhead-text pb-4">
-                        <span className="gradient_text drop-shadow font-semibold">
-                            Vidéo de Gameplay
-                        </span>
-                </h2>
-                <p>
-                    Pour des raisons de droits d'auteur sur la music, le son a été retiré de la vidéo.
-                </p>
-                <div className="pb-5">
-                    <iframe
-                        className="w-full h-96 object-cover rounded-lg shadow-lg"
-                        src="https://youtube.com/embed/OoIJkiQOXEQ"
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
-                </div>
-            </div>
             <div className="pb-5">
                 <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Compétences Apportées
+                        Ce que j'ai appris
                     </span>
                 </h2>
                 <ul>
-                    <li>Travail d'équipe</li>
-                    <li>Créativité</li>
                     <li>Conception de jeux vidéo</li>
                     <li>Programmation en équipe</li>
                     <li>UnrealEngine5</li>

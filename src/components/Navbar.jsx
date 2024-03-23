@@ -6,18 +6,18 @@ const Navbar = () => {
         <header className="header">
             <NavLink
                 to="/"
-                className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+                className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold transition-all ease-in-out hover:scale-110  shadow-md hover:shadow-xl"
             >
-                <p className="gradient_text text-sm lg:text-xl">CG</p>
+                <p className="gradient_text text-sm lg:text-xl ">CG</p>
             </NavLink>
-            <nav className="flex lg:gap-7 font-normal items-center justify-center lg:font-bold shadow-md bg-white rounded-3xl lg:px-5 lg:py-3 text-sm lg:text-xl px-2 py-2">
+            <nav className="flex lg:gap-7 font-semibold items-center justify-center lg:font-bold shadow-md bg-white rounded-3xl lg:px-5 lg:py-3 text-sm lg:text-xl px-2 py-2">
                 <NavLink
                     key="about"
                     to="/about"
                     className={({ isActive }) =>
                         isActive
                             ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
-                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text"
+                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text transition-transform hover:scale-110 ease-in-out duration-200"
                     }
                 >
                     About
@@ -28,7 +28,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
-                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text"
+                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text transition-transform hover:scale-110 ease-in-out duration-200"
                     }
                 >
                     Projects
@@ -37,7 +37,7 @@ const Navbar = () => {
                     href={cv}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-black px-1 lg:px-2.5 transition-all duration-300 ease-in-out hover:glow hover:blue_gradient_text"
+                    className="text-black px-1 lg:px-2.5 hover:blue_gradient_text transition-transform hover:scale-110 ease-in-out duration-200"
                 >
                     CV
                 </a>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     className={({ isActive }) =>
                         isActive
                             ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
-                            : "text-black px-1 lg:px-2.5 ease-in-out hover:blue_gradient_text"
+                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text transition-transform hover:scale-110 ease-in-out duration-200"
                     }
                 >
                     Contact

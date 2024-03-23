@@ -1,8 +1,9 @@
 import infoAC from "../../assets/infoAC.pdf";
+import chevron from "../../assets/icons/chevron.svg";
 import {BlockCompetence} from "../../components/components.js";
 import React from "react";
 
-const controverse = () => {
+const controverse = ({isMobile}) => {
     const competences = [
         {
             AC: "CE 1.01",
@@ -69,18 +70,29 @@ const controverse = () => {
 
     return (
         <section className="project-info-box">
-            <div className="pb-5">
-                <h1 className="head-text">
-                    <span className="gradient_text drop-shadow font-semibold">
-                        Site web "La Controverse"
+            <div>
+                <div className="flex flex-row justify-between">
+                    <h1 className='head-text'>
+                    <span className='gradient_text drop-shadow font-semibold'>
+                    {isMobile ? "Nuit de l'info 2023" : "Site Web Nuit de l'Info 2023"}
                     </span>
-                </h1>
-                <p className="font-bold"><strong>Novembre 2022 Décembre 2022</strong></p>
-                <p><strong>Associé à IUT MONTPELLIER-SETE</strong></p>
+                    </h1>
+                </div>
+                <div className="flex flex-row justify-between pb-5">
+                    <p className="font-bold">Novembre 2022 Décembre 2022</p>
+                    <div className="flex flex-row items-center gap-10 group cursor-pointer relative">
+                        {!isMobile && (<div
+                            className="opacity-0 scale-50 transition-all ease-in-out transform -translate-x-0 absolute group-hover:opacity-100 group-hover:translate-x-2 right-0">
+                            <img src={chevron} alt="chevron" className="w-10 h-10"/>
+                        </div>)}
+                        <a href="https://github.com/Clement-Garro/SAE-1.6"
+                           className={`font-bold underline transition-colors ease-in-out group-hover:no-underline group-hover:blue_gradient_text ${isMobile ? 'pr-0' : 'pr-8'}`}>{isMobile ? "Lien Github" : "Lien vers le Github"}</a>
+                    </div>
+                </div>
             </div>
 
             <div className="pb-5">
-                <h2 className="subhead-text pb-4">
+            <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
                         Contexte du projet
                     </span>
@@ -117,58 +129,57 @@ const controverse = () => {
                     professionnalisme de notre projet.
                 </p>
             </div>
-                <div className="pb-5">
-                    <h2 className="subhead-text pb-4">
+            <div className="pb-5">
+                <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
                         Compétences Acquises
                     </span>
-                    </h2>
-                    <ul className="list-disc pl-8">
-                        <li>Rédaction d'article web</li>
-                        <li>Élaboration d'architecture de site web</li>
-                        <li>Conception et réalisation d'interfaces homme-machine</li>
-                    </ul>
-                </div>
+                </h2>
+                <ul className="list-disc pl-8">
+                    <li>Rédaction d'article web</li>
+                    <li>Élaboration d'architecture de site web</li>
+                    <li>Conception et réalisation d'interfaces homme-machine</li>
+                </ul>
+            </div>
 
-                <div className="pb-5">
-                    <h2 className="subhead-text pb-4">
+            <div className="pb-5">
+                <h2 className="subhead-text pb-4">
                     <span className="gradient_text drop-shadow font-semibold">
                         Contributeur
                     </span>
-                    </h2>
-                    <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
-                    <p>Julien Costa-Castro - 1er BUT chez IUT de Montpellier-Sète</p>
-                </div>
+                </h2>
+                <p>Daniil Hirchyts - 1er BUT chez IUT de Montpellier-Sète</p>
+                <p>Julien Costa-Castro - 1er BUT chez IUT de Montpellier-Sète</p>
+            </div>
 
 
-                <div>
-                    <h2 className="subhead-text pb-4">
+            <div>
+                <h2 className="subhead-text pb-4">
                     <span className="drop-shadow font-semibold">
                         Relations entre les réalisations personnelles et le
                         <a href={infoAC} target="_blank" className="underline"> programme
                         </a> de BUT Informatique
 </span>
 
-                    </h2>
-                    <div className={`grid sm:grid-cols-1 lg:grid-cols-2 gap-4 pb-5`}>
-                        {competences.map((competence, index) => (
-                            // Ajoutez une classe spéciale au dernier élément s'il est impair
-                            console.log(isImpair, index, competences.length - 1),
-                                <BlockCompetence
-                                    key={index}
-                                    AC={competence.AC}
-                                    ACtxt={competence.ACtxt}
-                                    lvl={competence.lvl}
-                                    Ex={competence.Ex}
-                                    // Utilisez la classe spéciale "col-span-2" si c'est le dernier élément impair
-                                    className={isImpair && index === competences.length - 1 ? "col-span-2" : ""}
-                                />
-                        ))}
-                    </div>
+                </h2>
+                <div className={`grid sm:grid-cols-1 lg:grid-cols-2 gap-4 pb-5`}>
+                    {competences.map((competence, index) => (
+                        // Ajoutez une classe spéciale au dernier élément s'il est impair
+                        console.log(isImpair, index, competences.length - 1),
+                            <BlockCompetence
+                                key={index}
+                                AC={competence.AC}
+                                ACtxt={competence.ACtxt}
+                                lvl={competence.lvl}
+                                Ex={competence.Ex}
+                                className={isImpair && index === competences.length - 1 ? "col-span-2" : ""}
+                            />
+                    ))}
                 </div>
+            </div>
         </section>
 
-)
+    )
 }
 
 export default controverse;

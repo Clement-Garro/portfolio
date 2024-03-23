@@ -5,8 +5,9 @@ import end from '../../assets/railihm/end.webp';
 import selection from '../../assets/railihm/selection.webp';
 import {BlockCompetence} from "../../components/components.js";
 import infoAC from '../../assets/infoAC.pdf';
+import chevron from '../../assets/icons/chevron.svg';
 
-const AventuriersDuRail = () => {
+const AventuriersDuRail = ({isMobile}) => {
     const imagesContext = [start, selection, game, end];
     const competences = [
         {
@@ -93,14 +94,23 @@ const AventuriersDuRail = () => {
 
     return (
         <section className="project-info-box">
-            <div className="pb-5">
+            <div>
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Aventuriers du Rail World Tour
+                        Jeux vidéo "Aventuriers du Rail"
                     </span>
                 </h1>
-                <p><strong>Février 2023 à Avril 2023</strong></p>
-                <p><strong>Associé à IUT MONTPELLIER-SETE</strong></p>
+            </div>
+            <div className="flex flex-row justify-between pb-5">
+                <p className="font-bold">Février 2023 à Avril 2023</p>
+                <div className="flex flex-row items-center gap-10 group cursor-pointer relative">
+                    {!isMobile && (<div
+                        className="scale-50 opacity-0 transition-all ease-in-out transform -translate-x-0 absolute group-hover:opacity-100 group-hover:translate-x-2 right-0">
+                        <img src={chevron} alt="chevron" className="w-10 h-10"/>
+                    </div>)}
+                    <a href="https://clementgarro.com"
+                       className={`font-bold underline transition-colors ease-in-out group-hover:no-underline group-hover:blue_gradient_text ${isMobile ? 'pr-0' : 'pr-8'}`}>{isMobile ? "Lien Github" : "Lien vers le Github"}</a>
+                </div>
             </div>
 
             <div className="pb-5">

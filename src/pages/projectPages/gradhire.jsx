@@ -4,8 +4,9 @@ import dashboard from '../../assets/gradhire/dashboard.webp';
 import offres from '../../assets/gradhire/offres.webp';
 import infoAC from '../../assets/infoAC.pdf';
 import {BlockCompetence} from "../../components/components.js";
+import chevron from '../../assets/icons/chevron.svg';
 
-const Gradhire = () => {
+const Gradhire = ({isMobile}) => {
     const imagesContext = [acceuil, dashboard, offres];
     const competences = [
         {
@@ -146,14 +147,25 @@ const Gradhire = () => {
 
     return (
         <section className="project-info-box">
-            <div className="pb-5">
-                <h1 className='head-text'>
+            <div>
+                <div className="flex flex-row justify-between">
+                    <h1 className='head-text'>
                     <span className='gradient_text drop-shadow font-semibold'>
                     Gradhire
-                </span>
-                </h1>
-                <p className="font-bold">sept. 2023 - aujourd’hui</p>
-                <p className="font-bold">Associé à IUT MONTPELLIER-SETE</p>
+                    </span>
+                    </h1>
+                </div>
+                <div className="flex flex-row justify-between pb-5">
+                    <p className="font-bold">sept. 2023 - aujourd’hui</p>
+                    <div className="flex flex-row items-center gap-10 group cursor-pointer relative">
+                        {!isMobile && (<div
+                            className="opacity-0 scale-50 transition-all ease-in-out transform -translate-x-0 absolute group-hover:opacity-100 group-hover:translate-x-2 right-0">
+                            <img src={chevron} alt="chevron" className="w-10 h-10"/>
+                        </div>)}
+                        <a href="https://github.com/Clement-Garro/GradHire-website"
+                           className={`font-bold underline transition-colors ease-in-out group-hover:no-underline group-hover:blue_gradient_text ${isMobile ? 'pr-0' : 'pr-8'}`}>{isMobile ? "Lien Github" : "Lien vers le Github"}</a>
+                    </div>
+                </div>
             </div>
 
             <div className="pb-5 object-contain">

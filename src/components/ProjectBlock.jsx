@@ -4,7 +4,7 @@ const ProjectBlock = ({projects}) => {
     return (
         <>
             {projects.map((project) => (
-                <Link to={`${project.link}`} className='lg:w-[400px] w-full p-5 my-5 transition-shadow ease-in-out hover:shadow-xl rounded-lg' key={project.name}>
+                <Link to={`${project.link}`} className='lg:w-[400px] w-full p-5 my-5 transition-shadow ease-in-out hover:shadow-xl rounded-2xl' key={project.name}>
                     <div className='block-container w-12 h-12'>
                         <div className={`btn-back rounded-xl ${project.theme}`}/>
                         <div className='btn-front rounded-xl flex justify-center items-center'>

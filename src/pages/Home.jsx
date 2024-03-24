@@ -18,6 +18,27 @@ const Home = () => {
     const [isPlayingMusic, setIsPlayingMusic] = useState(true)
     const [hasUserInteracted, setHasUserInteracted] = useState(false);
 
+    const [showPopup, setShowPopup] = useState(false);
+
+    useEffect(() => {
+        if (showPopup) {
+            const timer = setTimeout(() => {
+                closePopup();
+            },3000);
+            return () => clearTimeout(timer);
+        }
+        // Affiche le popup seulement si l'utilisateur n'a pas déjà fermé le popup
+        if (!localStorage.getItem('popupClosed')) {
+            setShowPopup(true);
+        }
+    }, [showPopup]);
+
+    const closePopup = () => {
+        setShowPopup(false);
+        // Enregistre dans le localStorage que l'utilisateur a fermé le popup
+        localStorage.setItem('popupClosed', 'true');
+    };
+
     useEffect(() => {
         if (isPlayingMusic && hasUserInteracted) {
             audioRef.current.play();
@@ -66,6 +87,14 @@ const Home = () => {
 
     return (
         <section className="w-full h-screen relative">
+            {showPopup && (
+                <div className="absolute w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity ease-out duration-500" onClick={closePopup}>
+                    <div className="neo-brutalism-white-rounded p-5 text-justify flex flex-col justify-center items-center gap-3" onClick={e => e.stopPropagation()}>
+                        <p>Vous pouvez glisser pour déplacer le dragon.</p>
+                        <button onClick={closePopup} className="btn">OK</button>
+                    </div>
+                </div>
+            )}
             <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
                 {currentStage && <HomeInfo currentStage={currentStage}/>}
             </div>

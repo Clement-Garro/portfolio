@@ -58,11 +58,14 @@ body:has(.card[data-color="green"]:hover) {
     }
 
     .btn {
-        @apply text-white bg-gradient-to-r from-[#138086] to-[#534666] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
+        @apply transition-all ease-in-out duration-300 hover:shadow-xl hover:scale-110 text-white bg-gradient-to-r from-[#138086] to-[#534666] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
     }
-
     .header {
         @apply flex justify-between items-center sm:px-16 px-8 py-4 absolute max-w-5xl mx-auto top-0 bg-transparent z-10 right-0 left-0 backdrop-blur-sm rounded-3xl;
+    }
+
+    .footerLogo {
+        @apply w-6 h-6 transition-all ease-in-out transform hover:scale-110 hover:rotate-12 hover:shadow-xl;
     }
 
     .footer {

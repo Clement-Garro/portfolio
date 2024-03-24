@@ -6,7 +6,7 @@ const botVinted = (isMobile) => {
             <div className="pb-5">
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        {!isMobile ? "Bot Vinted Discord" : "Bot Discord Vinted"}
+                        {!isMobile ? "Bot Vinted Discord" : "Mon bot Discord Vinted"}
                     </span>
                 </h1>
                 <p className="font-bold">Date: Mars 2023</p>

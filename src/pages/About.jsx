@@ -74,23 +74,11 @@ const About = () => {
                         J'aime aussi lancer des tricks en <b>trottinette freestyle</b>, une pratique que j'ai explorée
                         pendant 3
                         ans avant de commencer à faire du <b>skate</b>. Depuis ma sortie à <b>Andorre</b>, je me suis
-                        passionné pour le
-                        <b>snowboard</b>. Cette expérience a été incroyable et inoubliable, et je souhaite continuer à
-                        la
-                        pratiquer
-                        avec passion.
-
-                        <b>Les voitures</b> sont également l'une de mes passions. J'ai eu l'occasion de me retrouver sur
-                        un
-                        circuit
-                        à bord d'une <b>Nissan 370Z</b> pour mes 17 ans. Je souhaite pouvoir modifier et améliorer
-                        une <b>Mazda
-                        RX-7
-                        de 1993</b> pour en faire la voiture dont j'ai toujours rêvé. La <b>sensation de vitesse et de
-                        liberté</b>
-                        procurée par ces passions m'apporte un sentiment d'attachement profond aux sensations fortes et
-                        à
-                        l'adrénaline.
+                        passionné pour le <b>snowboard</b>. Cette expérience a été incroyable et inoubliable, et je
+                        souhaite continuer à la pratiquer avec passion. <b>Les voitures</b> sont également l'une de mes passions. J'ai eu l'occasion de me retrouver sur
+                        un circuit à bord d'une <b>Nissan 370Z</b> pour mes 17 ans. Je souhaite pouvoir modifier et
+                        améliorer une <b>Mazda RX-7 de 1993</b> pour en faire la voiture dont j'ai toujours rêvé. La <b>sensation de vitesse et de liberté</b> procurée par ces passions m'apporte un sentiment d'attachement profond aux sensations fortes et
+                        à l'adrénaline.
                     </p>
                 </div>
                 <div>
@@ -108,8 +96,7 @@ const About = () => {
                         De plus, ma pratique du volley-ball m'a doté d'un <b>esprit combatif</b> et
                         d'une <b>créativité</b> qui
                         alimentent ma passion pour l'apprentissage continu. Cette expérience m'a également permis de
-                        développer des <b>compétences essentielles pour travailler en équipe</b> et pour exercer un
-                        <b>leadership efficace</b>. J'ai ainsi développé une capacité à travailler dans une équipe
+                        développer des <b>compétences essentielles pour travailler en équipe</b> et pour exercer un <b>leadership efficace</b>. J'ai ainsi développé une capacité à travailler dans une équipe
                         soudée, à
                         encourager la collaboration et à résoudre les problèmes de manière collective.
                     </p>

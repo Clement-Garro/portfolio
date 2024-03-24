@@ -29,8 +29,6 @@ const renderContent = {
             Donc des changements peuvent être apportés à tout moment.
             <br/>
             Bonne Visite !
-            <br/>
-            ps vous pouvez maintenir le cliquer pour faire défiler les pages
         </h1>
     ),
     2: (

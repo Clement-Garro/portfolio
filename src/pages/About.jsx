@@ -25,7 +25,7 @@ const About = () => {
                     <p className="p-text">
                         Je suis un étudiant en informatique, <b>passionné</b> par la technologie, la culture japonaise,
                         les jeux vidéo, le sport, la cuisine et la musique. J'ai <b>19 ans</b> depuis le 29
-                        septembre 2021 et je suis actuellement en BUT Informatique à l'IUT de Montpellier-Sète. Mes
+                        septembre 2023 et je suis actuellement en BUT Informatique à l'IUT de Montpellier-Sète. Mes
                         passions
                         me permettent de <b>m'épanouir pleinement et de cultiver une curiosité sans cesse
                         renouvelée</b> dans ma
@@ -59,26 +59,15 @@ const About = () => {
                         les saveurs du monde, ajoutant ainsi une dimension créative à ma vie.
                     </p>
                     <p className="p-text">
+
                         Je pratique le <b>volley-ball</b> depuis mon entrée au collège, ce qui me permet de développer
-                        des
-                        compétences essentielles telles que <b>la communication</b>, <b>la coordination et la
-                        concentration</b>. En
-                        pratiquant ce sport, j'apprends <b>l'importance du travail d'équipe et de la persévérance</b>,
-                        des
-                        valeurs
-                        qui se reflètent également dans ma vie professionnelle et personnelle.
-                        M'offrant un environnement stimulant où je peux me surpasser et relever de
-                        nouveaux défis, ce qui contribue à mon développement personnel et à mon épanouissement.
-                    </p>
-                    <p className="p-text">
-                        J'aime aussi lancer des tricks en <b>trottinette freestyle</b>, une pratique que j'ai explorée
-                        pendant 3
-                        ans avant de commencer à faire du <b>skate</b>. Depuis ma sortie à <b>Andorre</b>, je me suis
-                        passionné pour le <b>snowboard</b>. Cette expérience a été incroyable et inoubliable, et je
-                        souhaite continuer à la pratiquer avec passion. <b>Les voitures</b> sont également l'une de mes passions. J'ai eu l'occasion de me retrouver sur
-                        un circuit à bord d'une <b>Nissan 370Z</b> pour mes 17 ans. Je souhaite pouvoir modifier et
-                        améliorer une <b>Mazda RX-7 de 1993</b> pour en faire la voiture dont j'ai toujours rêvé. La <b>sensation de vitesse et de liberté</b> procurée par ces passions m'apporte un sentiment d'attachement profond aux sensations fortes et
-                        à l'adrénaline.
+                        des compétences essentielles telles que <b>la communication</b>, <b>la coordination et la
+                        concentration</b>. En pratiquant ce sport, j'apprends <b>l'importance du travail d'équipe et de
+                        la persévérance</b>, des valeurs qui se reflètent également dans ma vie professionnelle et
+                        personnelle. Cela m'offre un environnement stimulant où je peux me surpasser et relever de
+                        nouveaux défis, ce qui contribue à mon développement personnel et à mon épanouissement. Depuis
+                        peu, je me suis passionné par le snowboard, deux sports qui me permettent de me dépasser et de
+                        me ressourcer.
                     </p>
                 </div>
                 <div>
@@ -96,7 +85,8 @@ const About = () => {
                         De plus, ma pratique du volley-ball m'a doté d'un <b>esprit combatif</b> et
                         d'une <b>créativité</b> qui
                         alimentent ma passion pour l'apprentissage continu. Cette expérience m'a également permis de
-                        développer des <b>compétences essentielles pour travailler en équipe</b> et pour exercer un <b>leadership efficace</b>. J'ai ainsi développé une capacité à travailler dans une équipe
+                        développer des <b>compétences essentielles pour travailler en équipe</b> et pour exercer un <b>leadership
+                        efficace</b>. J'ai ainsi développé une capacité à travailler dans une équipe
                         soudée, à
                         encourager la collaboration et à résoudre les problèmes de manière collective.
                     </p>

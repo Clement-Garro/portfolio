@@ -91,7 +91,7 @@ export const experiences = [
         title: "IUT Montpellier-Sète",
         icon: but,
         iconBg: "#8e8e8e",
-        date: "Septembre 2023 - aujourd'hui",
+        date: "Septembre 2022 - aujourd'hui",
         points: [
             "Montpellier, France",
             "BUT Informatique sur 3 années",
@@ -109,7 +109,7 @@ export const experiences = [
         title: "Lycee Thomas Edison",
         icon: portfolio,
         iconBg: "#8e8e8e",
-        date: "Septembre 2020 - Juin 2023",
+        date: "Septembre 2019 - Juin 2022",
         points: [
             "Arduinos",
             "Base de données",

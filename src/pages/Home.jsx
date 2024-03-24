@@ -14,8 +14,8 @@ const Home = () => {
     audioRef.current.volume = 0.01;
     const [isRotating, setIsRotating] = useState(false)
     const [currentStage, setCurrentStage] = useState(1)
-    const [isPlayingMusic, setIsPlayingMusic] = useState(true)
-    const [hasUserInteracted, setHasUserInteracted] = useState(true);
+    const [isPlayingMusic, setIsPlayingMusic] = useState(false)
+    const [hasUserInteracted, setHasUserInteracted] = useState(false);
 
     const [showPopup, setShowPopup] = useState(false);
 
@@ -42,7 +42,6 @@ const Home = () => {
         if (isPlayingMusic && hasUserInteracted) {
             audioRef.current.play();
         }
-
         return () => {
             audioRef.current.pause();
         };

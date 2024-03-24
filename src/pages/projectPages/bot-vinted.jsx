@@ -1,12 +1,12 @@
 import React from "react";
 
-const botVinted = () => {
+const botVinted = (isMobile) => {
     return (
         <section className="project-info-box">
             <div className="pb-5">
                 <h1 className="head-text">
                     <span className="gradient_text drop-shadow font-semibold">
-                        Mon bot Vinted pour Discord
+                        {!isMobile ? "Bot Vinted Discord" : "Bot Discord Vinted"}
                     </span>
                 </h1>
                 <p className="font-bold">Date: Mars 2023</p>

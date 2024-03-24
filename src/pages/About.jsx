@@ -176,7 +176,7 @@ const About = () => {
                     Objectif
                 </h1>
                 <h3 className='subhead-text'>Actuel </h3>
-                <p className="p-text">
+                <p className="p-text pb-6">
                     Mon objectif actuel est de trouver une alternance dans le domaine du développement d'applications ou
                     web. Cette opportunité me permettra non seulement d'approfondir mes compétences techniques, mais
                     aussi de m'épanouir pleinement dans des domaines qui me passionnent véritablement. Je suis convaincu

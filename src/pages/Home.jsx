@@ -14,7 +14,6 @@ const Home = () => {
     audioRef.current.volume = 0.01;
     const [isRotating, setIsRotating] = useState(false)
     const [currentStage, setCurrentStage] = useState(1)
-    const [previousStage, setPreviousStage] = useState(null);
     const [isPlayingMusic, setIsPlayingMusic] = useState(true)
     const [hasUserInteracted, setHasUserInteracted] = useState(false);
 
@@ -41,7 +40,15 @@ const Home = () => {
 
     useEffect(() => {
         if (isPlayingMusic && hasUserInteracted) {
-            audioRef.current.play();
+            const playPromise = audioRef.current.play();
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // Lecture automatique a commencé.
+
+                }).catch(error => {
+                    // Lecture automatique a échoué.
+                });
+            }
         }
 
         return () => {

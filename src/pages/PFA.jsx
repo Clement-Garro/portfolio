@@ -7,7 +7,7 @@ const PFA = () => {
     return (
         <section className="max-container">
             <div className="text-center pb-5">
-                <h1 className="head-text">
+                <h1 className="head-text !text-5xl">
                     Mon{" "}
                     <span className="gradient_text drop-shadow font-semibold">
                 Portfolio d'apprentissage

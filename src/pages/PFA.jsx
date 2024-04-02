@@ -8,9 +8,9 @@ const PFA = () => {
         <section className="max-container">
             <div className="text-center pb-5">
                 <h1 className="head-text">
-                    Mes{" "}
+                    Mon{" "}
                     <span className="gradient_text drop-shadow font-semibold">
-                Compétences
+                Portfolio d'apprentissage
             </span>
                 </h1>
             </div>

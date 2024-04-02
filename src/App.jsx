@@ -1,6 +1,6 @@
 import {Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
-import { Home, About, Projects, Contact, ProjetInfo } from "./pages";
+import {Home, About, Projects, Contact, ProjetInfo, PFA} from "./pages";
 import {Toaster} from "react-hot-toast";
 import {Analytics} from "@vercel/analytics/react";
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/project/:name" element={<ProjetInfo />} />
+                    <Route path="/pfa" element={<PFA />} />
                 </Routes>
             </Router>
             <Toaster

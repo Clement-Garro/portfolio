@@ -172,7 +172,7 @@ const controverse = ({isMobile}) => {
                                 ACtxt={competence.ACtxt}
                                 lvl={competence.lvl}
                                 Ex={competence.Ex}
-                                className={isImpair && index === competences.length - 1 ? "col-span-2" : ""}
+                                className={isImpair && index === competences.length - 1 && window.innerWidth > 640 ? "col-span-2" : ""}
                             />
                     ))}
                 </div>

@@ -155,7 +155,7 @@ const EscapeGame = (isMobile) => {
                                 lvl={competence.lvl}
                                 Ex={competence.Ex}
                                 // Utilisez la classe spéciale "col-span-2" si c'est le dernier élément impair
-                                className={isImpair && index === competences.length - 1 ? "col-span-2" : ""}
+                                className={isImpair && index === competences.length - 1 && window.innerWidth > 640 ? "col-span-2" : ""}
                             />
                     ))}
                 </div>

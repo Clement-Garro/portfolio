@@ -52,6 +52,18 @@ const Navbar = () => {
                 >
                     Contact
                 </NavLink>
+                <NavLink
+                    key="pfa"
+                    to="/pfa"
+                    className={({ isActive }) =>
+                        isActive
+                            ? "blue_gradient_text px-1 lg:px-2.5 rounded-3xl"
+                            : "text-black px-1 lg:px-2.5 hover:blue_gradient_text transition-transform hover:scale-110 ease-in-out duration-200"
+                    }
+                >
+                    <span className="lg:hidden">Appr.</span>
+                    <span className="hidden lg:inline">Apprentissage</span>
+                </NavLink>
             </nav>
         </header>
     );

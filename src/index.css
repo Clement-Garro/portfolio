@@ -61,7 +61,7 @@ body:has(.card[data-color="green"]:hover) {
         @apply transition-all ease-in-out duration-300 hover:shadow-xl hover:scale-110 text-white bg-gradient-to-r from-[#138086] to-[#534666] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center;
     }
     .header {
-        @apply flex justify-between items-center sm:px-16 px-8 py-4 absolute max-w-5xl mx-auto top-0 bg-transparent z-10 right-0 left-0 backdrop-blur-sm rounded-3xl;
+        @apply flex justify-between items-center sm:px-16 px-8 py-4 absolute mx-auto top-0 bg-transparent z-10 right-0 left-0 backdrop-blur-sm rounded-3xl;
     }
 
     .footerLogo {
@@ -81,7 +81,7 @@ body:has(.card[data-color="green"]:hover) {
     }
 
     .project-info-box {
-        @apply mx-auto relative flex text-black flex-col gap-3 max-w-4xl neo-brutalism-white-rounded pt-4 px-8 mb-6;
+        @apply relative flex text-black flex-col gap-3 max-w-fit neo-brutalism-white-rounded pt-4 px-8 mb-6 mx-10;
     }
 
     .neo-btn {
@@ -95,6 +95,10 @@ body:has(.card[data-color="green"]:hover) {
     .cta-text {
         @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
     }
+}
+
+.video {
+    height: 50rem;
 }
 
 .logo {

@@ -30,6 +30,7 @@ import php from "./php.svg"
 import but from './but.svg'
 import iconSite from './iconSite.svg'
 import chevron from './chevron.svg'
+import cines from './cines.svg'
 
 export {
     chevron,
@@ -63,5 +64,6 @@ export {
     soundoff,
     gradhire,
     C,
-    Cplusplus
+    Cplusplus,
+    cines
 }

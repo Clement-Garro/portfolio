@@ -33,7 +33,7 @@ const shadowOfMemory = ({isMobile}) => {
                 </h2>
                 <div className="pb-5">
                     <iframe
-                        className="w-full h-96 object-cover rounded-lg shadow-lg"
+                        className="w-full video object-cover rounded-lg shadow-lg"
                         src="https://youtube.com/embed/OoIJkiQOXEQ"
                         title="YouTube video player"
                         frameBorder="0"

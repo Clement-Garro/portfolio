@@ -10,7 +10,7 @@ import {
     pricewise,
     react,
     tailwindcss, train,
-    twitter, vite, gradhire, C, Cplusplus, php, but
+    twitter, vite, gradhire, C, Cplusplus, php, but, cines
 } from "../assets/icons";
 
 export const skills = [
@@ -138,6 +138,16 @@ export const socialLinks = [
         link: 'https://www.linkedin.com/in/clement-garro-2b58ba263/',
     }
 ];
+
+export const professionalProjects = [
+    {
+        iconUrl: cines,
+        theme: 'btn-back-green',
+        name: 'CINES',
+        description: 'migration et refonte de l\'application web FACILE du Centre Informatique National de l\'Enseignement Supérieur',
+        link: '/project/cines',
+    },
+    ]
 
 export const personalProjects = [
     {

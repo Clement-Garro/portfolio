@@ -6,8 +6,8 @@ const PFA = () => {
     let isImpair = false;
     return (
         <section className="max-container">
-            <div className="text-center pb-5">
-                <h1 className="head-text !text-5xl">
+            <div className="text-center pb-20">
+                <h1 className="head-text lg:!text-5xl sm:!text-xl">
                     Mon{" "}
                     <span className="gradient_text drop-shadow font-semibold">
                 Portfolio d'apprentissage

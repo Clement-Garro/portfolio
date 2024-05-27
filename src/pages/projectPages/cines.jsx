@@ -8,11 +8,13 @@ import contactOld from "../../assets/cines/contactOld.webp";
 import contactNew from "../../assets/cines/contactNew.webp";
 import correctionOld from "../../assets/cines/correctionOld.webp";
 import correctionNew from "../../assets/cines/correctionNew.webp";
+import adastra from "../../assets/cines/adastra.webp";
 
 const cines = (isMobile) => {
-    let imagesContext1 = [cinesHomeOld, cinesHomeNew,textHome ,tableFormat];
+    let imagesContext1 = [cinesHomeOld, cinesHomeNew, textHome, tableFormat];
     let imagesContext2 = [contactOld, contactNew];
     let imagesContext3 = [correctionOld, correctionNew];
+    let adastraImage = [adastra];
     return (
         <section className="project-info-box w-screen">
             <div className="pb-5">
@@ -46,44 +48,79 @@ const cines = (isMobile) => {
                         Page d'accueil
                     </div>
                     <div className="flex flex-col gap-2">
-                    {imagesContext1.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`Image ${index}`}
-                            className="w-full h-auto rounded-lg shadow-2xl depth-effect"
-                        />
-                    ))}
+                        {imagesContext1.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Image ${index}`}
+                                className="w-full h-auto rounded-lg shadow-2xl depth-effect"
+                            />
+                        ))}
                     </div>
                     <div className="content-center items-center subhead-text">
                         Page Contact
                     </div>
                     <div className="flex flex-col gap-2">
                         {imagesContext2.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`Image ${index}`}
-                            className="w-full h-auto rounded-lg shadow-2xl depth-effect"
-                        />
-                    ))}
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Image ${index}`}
+                                className="w-full h-auto rounded-lg shadow-2xl depth-effect"
+                            />
+                        ))}
                     </div>
                     <div className="content-center items-center subhead-text">
                         Page Correction des documents
                     </div>
                     <div className="gap-2 flex-col flex">
-                    {imagesContext3.map((image, index) => (
-                        <img
-                            key={index}
-                            src={image}
-                            alt={`Image ${index}`}
-                            className="w-full h-auto rounded-lg shadow-2xl depth-effect"
-                        />
-                    ))}
+                        {imagesContext3.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Image ${index}`}
+                                className="w-full h-auto rounded-lg shadow-2xl depth-effect"
+                            />
+                        ))}
+                    </div>
+                    <div className="content-center items-center subhead-text">
+                        Moi avec Ad Astra
+                    </div>
+                    <div className="gap-2 flex-col flex">
+                        {adastraImage.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image}
+                                alt={`Image ${index}`}
+                                className="w-full h-auto rounded-lg shadow-2xl depth-effect"
+                            />
+                        ))}
+                    </div>
+
+                    <div className="flex gap-4 flex-col">
+                        <h1 className='head-text'>
+                            C'est quoi{" "}
+                            <span className='gradient_text drop-shadow font-semibold'>
+                    Ad Astra
+                    </span>
+                            {" "}?
+                        </h1>
+                        <p>
+                            Acquis par GENCI en 2022 , le supercalculateur Adastra (technologie HPE-CRAY-AMD) hébergé et
+                            opéré par le CINES prend son nom de la locution latine « Per aspera ad astra » traduite par
+                            «
+                            Par des chemins ardus vers les étoiles ». Il va fournir en effet aux scientifiques des
+                            capacités de calcul massives et innovantes pour leurs besoins complexes en simulation
+                            numérique, offrant une performance crête de plus de 74 PFlop/s, soit plus de vingt fois la
+                            puissance de calcul précédemment en production au CINES (supercalculateur Occigen). Adastra
+                            contribuera ainsi à renforcer la position et les moyens de la recherche française dans son
+                            exploration de nouveaux champs scientifiques, et nottament en intelligence artificielle avec
+                            sa
+                            partition GPU.
+                        </p>
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }

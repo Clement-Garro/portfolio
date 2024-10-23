@@ -24,8 +24,8 @@ const About = () => {
                     <h2 className='subhead-text'>Qui suis-je ?</h2>
                     <p className="p-text">
                         Je suis un étudiant en informatique, <b>passionné</b> par la technologie, la culture japonaise,
-                        les jeux vidéo, le sport, la cuisine et la musique. J'ai <b>19 ans</b> depuis le 29
-                        septembre 2023 et je suis actuellement en BUT Informatique à l'IUT de Montpellier-Sète. Mes
+                        les jeux vidéo, le sport, la cuisine et la musique. J'ai <b>20 ans</b> depuis le 29
+                        septembre 2024 et je suis actuellement en BUT Informatique à l'IUT de Montpellier-Sète. Mes
                         passions
                         me permettent de <b>m'épanouir pleinement et de cultiver une curiosité sans cesse
                         renouvelée</b> dans ma
@@ -177,11 +177,7 @@ const About = () => {
                 </h1>
                 <h3 className='subhead-text'>Actuel </h3>
                 <p className="p-text pb-6">
-                    Mon objectif actuel est de trouver une alternance dans le domaine du développement d'applications ou
-                    web. Cette opportunité me permettra non seulement d'approfondir mes compétences techniques, mais
-                    aussi de m'épanouir pleinement dans des domaines qui me passionnent véritablement. Je suis convaincu
-                    que cette expérience professionnelle sera le tremplin idéal pour concrétiser mes aspirations dans le
-                    domaine de l'informatique.
+                    Mon objectif actuel est de réussir mon alternance en proposant des solutions correctes et de devenir ingénieur en logiciels ou web.
                 </p>
                 <h3 className='subhead-text'>Futur </h3>
                 <p className="p-text">

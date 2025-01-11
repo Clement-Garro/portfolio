@@ -3,7 +3,7 @@ import start from '../../assets/railihm/start.webp';
 import game from '../../assets/railihm/game.webp';
 import end from '../../assets/railihm/end.webp';
 import selection from '../../assets/railihm/selection.webp';
-import {BlockCompetence} from "../../components/components.js";
+import {BlockCompetence} from '../../components/BlockCompetence.jsx';
 import infoAC from '../../assets/infoAC.pdf';
 import chevron from '../../assets/icons/chevron.svg';
 

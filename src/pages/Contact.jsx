@@ -2,13 +2,14 @@ import emailjs from "@emailjs/browser";
 import {Canvas} from "@react-three/fiber";
 import React, {Suspense, useRef, useState} from "react";
 
-import {Fox} from "../models";
 import useAlert from "../hooks/useAlert.jsx";
-import {Alert, Loader} from "../components/components.js";
-import CTA from "../components/CTA.jsx";
-import Footer from "../components/Footer.jsx";
+import {CTA} from "../components/CTA.jsx";
+import {Footer} from "../components/Footer.jsx";
+import {Alert} from "../components/Alert.jsx";
+import {Loader} from "@react-three/drei";
+import {Fox} from "../models/Fox.jsx";
 
-const Contact = () => {
+export const Contact = () => {
     const formRef = useRef();
     const [form, setForm] = useState({nom: "", email: "", message: ""});
     const {alert, showAlert, hideAlert} = useAlert();
@@ -178,5 +179,3 @@ const Contact = () => {
         </section>
     );
 };
-
-export default Contact;

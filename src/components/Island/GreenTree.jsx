@@ -1,6 +1,6 @@
 import React from "react";
 
-const GreenTree = ({nodes,materials, ...props}) => {
+export const GreenTree = ({nodes,materials, ...props}) => {
     return (
         <group {...props}>
             <mesh
@@ -33,6 +33,4 @@ const GreenTree = ({nodes,materials, ...props}) => {
             />
         </group>
     )
-}
-
-export default GreenTree;
+};

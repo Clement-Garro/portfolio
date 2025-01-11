@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import cv from "../assets/cv.pdf";
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <header className="header">
             <NavLink
@@ -68,5 +68,3 @@ const Navbar = () => {
         </header>
     );
 };
-
-export default Navbar;

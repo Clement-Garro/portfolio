@@ -1,9 +1,10 @@
-import {CTA,ProjectBlock} from "../components/components.js";
 import {Link} from "react-router-dom";
 import {universityProjects, personalProjects, benevolatProjects, professionalProjects} from "../constants";
-import Footer from "../components/Footer.jsx";
+import {Footer} from "../components/Footer.jsx";
+import {ProjectBlock} from "../components/ProjectBlock.jsx";
+import {CTA} from "../components/CTA.jsx";
 
-const Projects = () => {
+export const Projects = () => {
     return (
         <section className='max-container'>
             <div>
@@ -34,7 +35,7 @@ const Projects = () => {
                 <h1 className='head-text'>
                     Mes{" "}
                     <span className='gradient_text drop-shadow font-semibold'>
-                    Projets en Bénévolat
+                    Projets en Équipe
                 </span>
                 </h1>
                 <div className='flex flex-wrap my-20 gap-16'>
@@ -62,5 +63,3 @@ const Projects = () => {
         </section>
     );
 };
-
-export default Projects;

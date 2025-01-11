@@ -4,7 +4,7 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 
 import birdScene from "../assets/3d/bird.glb";
 
-const Bird = ({...props }) => {
+export const Bird = ({...props }) => {
     const birdRef = useRef();
 
     const { scene, animations } = useGLTF(birdScene);
@@ -46,6 +46,4 @@ const Bird = ({...props }) => {
             <primitive object={scene} />
         </mesh>
     );
-}
-
-export default Bird;
+};

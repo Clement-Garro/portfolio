@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-const ProjectBlock = ({projects}) => {
+export const ProjectBlock = ({projects}) => {
     return (
         <>
             {projects.map((project) => (
@@ -26,6 +26,4 @@ const ProjectBlock = ({projects}) => {
             ))}
         </>
     );
-}
-
-export default ProjectBlock;
+};

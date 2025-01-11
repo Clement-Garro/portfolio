@@ -1,13 +1,14 @@
 import {experiences, skills} from "../constants";
 import "react-vertical-timeline-component/style.min.css";
-import {CTA, Footer} from "../components/components.js";
 
 import {
     VerticalTimeline,
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import {CTA} from "../components/CTA.jsx";
+import {Footer} from "../components/Footer.jsx";
 
-const About = () => {
+export const About = () => {
     return (
         <section className='max-container'>
             <h1 className='head-text'>
@@ -177,7 +178,8 @@ const About = () => {
                 </h1>
                 <h3 className='subhead-text'>Actuel </h3>
                 <p className="p-text pb-6">
-                    Mon objectif actuel est de réussir mon alternance en proposant des solutions correctes et de devenir ingénieur en logiciels ou web.
+                    Mon objectif actuel est de réussir mon alternance en proposant des solutions correctes et de devenir
+                    ingénieur en logiciels ou web.
                 </p>
                 <h3 className='subhead-text'>Futur </h3>
                 <p className="p-text">
@@ -198,8 +200,5 @@ const About = () => {
             <Footer/>
 
         </section>
-    )
-        ;
+    );
 };
-
-export default About;

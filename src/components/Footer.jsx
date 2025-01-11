@@ -2,7 +2,7 @@
 import React from 'react';
 import { socialLinks } from '../constants/index.js';
 
-const Footer = () => {
+export const Footer = () => {
     return (
         <footer className='py-8 flex justify-between text-center text-black-500'>
             <div className='flex justify-start items-center'>
@@ -27,5 +27,3 @@ const Footer = () => {
         </footer>
     );
 };
-
-export default Footer;

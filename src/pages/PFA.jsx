@@ -1,8 +1,8 @@
-import {BlockCompetence} from "../components/components.js";
 import {Allcompetences} from "../constants/index.js";
 import React from "react";
+import {BlockCompetence} from "../components/BlockCompetence.jsx";
 
-const PFA = () => {
+export const PFA = () => {
     let isImpair = false;
     return (
         <section className="max-container">
@@ -37,6 +37,4 @@ const PFA = () => {
             })}
         </section>
     )
-}
-
-export default PFA;
+};

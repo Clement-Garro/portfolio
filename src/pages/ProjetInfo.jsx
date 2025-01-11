@@ -1,8 +1,8 @@
-import InCreation from "./InCreation.jsx";
+import {InCreation} from "./InCreation.jsx";
 import {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
 
-const ProjetInfo = () => {
+export const ProjetInfo = () => {
     const params = useParams();
     const fileName = params.name;
     const [JsxComponent, setJsxComponent] = useState(null);
@@ -44,5 +44,3 @@ const ProjetInfo = () => {
         </section>
     );
 };
-
-export default ProjetInfo;

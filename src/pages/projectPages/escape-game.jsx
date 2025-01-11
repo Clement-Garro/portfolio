@@ -1,7 +1,6 @@
 import React from 'react';
 import infoAC from "../../assets/infoAC.pdf";
-
-import {BlockCompetence} from "../../components/components.js";
+import {BlockCompetence} from "../../components/BlockCompetence.jsx";
 import chevron from "../../assets/icons/chevron.svg";
 
 const EscapeGame = (isMobile) => {

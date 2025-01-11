@@ -1,14 +1,17 @@
-import Loader from "../components/Loader.jsx";
+import {Loader} from "../components/Loader.jsx";
 import React, {Suspense, useState, useEffect, useRef} from "react";
 import {Canvas} from "@react-three/fiber";
-import {Map, Sky, Bird, Dragon} from "../models";
-import HomeInfo from "../components/HomeInfo.jsx";
+import {HomeInfo} from "../components/HomeInfo.jsx";
 
 import music from "../assets/music.mp3"
 import {soundon, soundoff} from "../assets/icons/index.js";
+import {Bird} from "../models/Bird.jsx";
+import {Sky} from "../models/Sky.jsx";
+import {Dragon} from "../models/Dragon.jsx";
+import {Map} from "../models/Map.jsx";
 
 
-const Home = () => {
+export const Home = () => {
     const audioRef = useRef(new Audio(music));
     audioRef.current.loop = true;
     audioRef.current.volume = 0.01;
@@ -153,6 +156,4 @@ const Home = () => {
             </div>
         </section>
     )
-}
-
-export default Home;
+};

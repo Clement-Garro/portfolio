@@ -1,6 +1,6 @@
 import React from "react";
 
-const Island = ({nodes, materials, ...props}) => {
+export const Island = ({nodes, materials, ...props}) => {
     return (<group {...props}>
         <mesh
             geometry={nodes.Island.geometry}
@@ -23,6 +23,4 @@ const Island = ({nodes, materials, ...props}) => {
             material={materials[nodes.Island_4.material.name]}
         />
     </group>)
-}
-
-export default Island;
+};

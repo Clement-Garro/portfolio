@@ -1,6 +1,6 @@
 import React from "react";
 
-const InCreation = () => {
+export const InCreation = () => {
     return (
         <section className="project-info-box">
             <div className="pb-5">
@@ -12,6 +12,4 @@ const InCreation = () => {
             </div>
         </section>
     )
-}
-
-export default InCreation
+};

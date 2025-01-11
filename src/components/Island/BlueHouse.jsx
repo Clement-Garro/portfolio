@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlueHouse = ({nodes, materials, ...props}) => {
+export const BlueHouse = ({nodes, materials, ...props}) => {
     return (
         <group {...props}>
             <mesh
@@ -25,6 +25,4 @@ const BlueHouse = ({nodes, materials, ...props}) => {
             />
         </group>
     )
-}
-
-export default BlueHouse;
+};

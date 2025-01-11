@@ -1,6 +1,6 @@
 import { Html } from "@react-three/drei";
 
-const Loader = () => {
+export const Loader = () => {
     return (
         <Html>
             <div className='flex justify-center items-center'>
@@ -9,5 +9,3 @@ const Loader = () => {
         </Html>
     );
 };
-
-export default Loader;

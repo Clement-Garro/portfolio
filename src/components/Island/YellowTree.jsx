@@ -1,6 +1,6 @@
 import React from "react";
 
-const YellowTree = ({nodes,materials, ...props}) => {
+export const YellowTree = ({nodes,materials, ...props}) => {
         return (
             <group {...props}>
                     <mesh
@@ -33,6 +33,4 @@ const YellowTree = ({nodes,materials, ...props}) => {
                     />
             </group>
         )
-}
-
-export default YellowTree;
+};

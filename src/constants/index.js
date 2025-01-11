@@ -170,6 +170,14 @@ export const personalProjects = [
         name: 'Bot de trading en cryptomonnaie pour FTX',
         description: 'Bot python pour trader en cryptomonnaie sur la plateforme FTX, avec des stratégies de trading basé sur du backtesting via les données de binance',
         link: '/project/bot-trading',
+    },
+    {
+        iconUrl: bot,
+        theme: 'btn-back-black',
+        name: 'Proto-Trader telegram bot',
+        description: 'Bot qui permet de trader mais aussi de suivre des signaux et des balaines sur telegram, avec un moniteur des trades en cours',
+        link: '/project/proto-trader',
+
     }
 ]
 

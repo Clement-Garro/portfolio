@@ -6,16 +6,21 @@ Source: https://sketchfab.com/3d-models/foxs-islands-163b68e09fcc47618450150be77
 Title: Fox's islands
 */
 
-import React, {useRef, useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {useGLTF} from "@react-three/drei";
 import {useFrame, useThree} from "@react-three/fiber";
 import {a} from "@react-spring/three";
 import islandeScene from "../assets/3d/island.glb";
-import GreenTree from "../components/Island/GreenTree.jsx";
-import {BlueHouse, BlueTree, Island, PinkHouse, RedHouse, RedTree} from "../components/components.js";
-import YellowTree from "../components/Island/YellowTree.jsx";
+import {GreenTree} from "../components/Island/GreenTree.jsx";
+import {YellowTree} from "../components/Island/YellowTree.jsx";
+import {Island} from "../components/Island/Island.jsx";
+import {PinkHouse} from "../components/Island/PinkHouse.jsx";
+import {RedTree} from "../components/Island/RedTree.jsx";
+import {BlueTree} from "../components/Island/BlueTree.jsx";
+import {BlueHouse} from "../components/Island/BlueHouse.jsx";
+import {RedHouse} from "../components/Island/RedHouse.jsx";
 
-const Map = ({isRotating, setIsRotating, setCurrentStage, currentStage, ...props}) => {
+export const Map = ({isRotating, setIsRotating, setCurrentStage, currentStage, ...props}) => {
     const islandRef = useRef();
 
     const {gl, viewport} = useThree();
@@ -37,12 +42,9 @@ const Map = ({isRotating, setIsRotating, setCurrentStage, currentStage, ...props
         e.preventDefault();
         setIsRotating(true);
 
-        const clientX = e.touches
+        lastX.current = e.touches
             ? e.touches[0].clientX
             : e.clientX;
-
-
-        lastX.current = clientX;
     }
 
     const handlePointerUp = (e) => {
@@ -177,6 +179,4 @@ const Map = ({isRotating, setIsRotating, setCurrentStage, currentStage, ...props
             <GreenTree nodes={nodes} materials={materials} position={[-6.6, 2.2, 1.5]}  scale={[0.3,0.3,0.3]} rotation={[-0.12,0,-0.1]}/>
         </a.group>
     );
-}
-
-export default Map;
+};

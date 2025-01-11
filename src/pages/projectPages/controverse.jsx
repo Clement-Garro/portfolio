@@ -1,6 +1,6 @@
 import infoAC from "../../assets/infoAC.pdf";
 import chevron from "../../assets/icons/chevron.svg";
-import {BlockCompetence} from "../../components/components.js";
+import {BlockCompetence} from "../../components/BlockCompetence";
 import React from "react";
 
 const controverse = ({isMobile}) => {
